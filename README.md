@@ -46,7 +46,7 @@ https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workf
 | |[prosjektnavn]-[versjon].zip | Pakke med det ferdige resultatet for en versjon |
 
 ## Navngivning av filer
-Inne i katalogene benytter vi navngivningsregler fra [SIMPLIFIER Best practices] (https://simplifier.net/guide/ProfilingAcademy/Best-practices)
+Inne i katalogene benytter vi navngivningsregler fra [SIMPLIFIER Best practices](https://simplifier.net/guide/ProfilingAcademy/Best-practices)
 
 **Filnavn for profiler og extensions:**  
 safest-Medication.structuredefinition-profile.xml  
@@ -58,4 +58,5 @@ http://ehelse.no/fhir/StructureDefinition/safest-Flag-v05 (evt SLV)
 ## Kontakt
 
 stine
+
 espen dot stranger dot seland at ehelse dot no
