@@ -55,6 +55,7 @@ safest-Medication.structuredefinition-profile.xml
 **URL'ene i koden:**  
 http://ehelse.no/fhir/StructureDefinition/safest-Flag-v05 (evt SLV)
 
-## kontakt
+## Kontakt
 
-Kommer
+stine
+espen dot stranger dot seland at ehelse dot no
