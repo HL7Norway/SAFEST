@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPackaged" />
+  <name value="safest-MedicinalProductPackaged" />
+  <title value="safest-medicinalproductpackaged" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MedicinalProductPackaged" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicinalProductPackaged" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="MedicinalProductPackaged.identifier">
+      <path value="MedicinalProductPackaged.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicinalProductPackaged.identifier:LegemiddelPakningID">
+      <path value="MedicinalProductPackaged.identifier" />
+      <sliceName value="LegemiddelPakningID" />
+      <short value="LegemiddelPakning ID from FEST" />
+      <definition value="The ID as presented in the FEST catalog LegemiddelPakningMerkevare" />
+    </element>
+    <element id="MedicinalProductPackaged.identifier:LegemiddelPakningID.system">
+      <path value="MedicinalProductPackaged.identifier.system" />
+      <short value="Identification of LegemiddelPakning" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/FEST" />
+    </element>
+    <element id="MedicinalProductPackaged.identifier:LegemiddelPakningID.value">
+      <path value="MedicinalProductPackaged.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="MedicinalProductPackaged.identifier:productnumber">
+      <path value="MedicinalProductPackaged.identifier" />
+      <sliceName value="productnumber" />
+      <short value="Product number for the package" />
+      <definition value="The product number (Varenummer) for the package" />
+    </element>
+    <element id="MedicinalProductPackaged.identifier:productnumber.system">
+      <path value="MedicinalProductPackaged.identifier.system" />
+      <fixedUri value="https://farmalogg.no/varenummer" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier">
+      <path value="MedicinalProductPackaged.packageItem.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier:DataCarrierIdentifier">
+      <path value="MedicinalProductPackaged.packageItem.identifier" />
+      <sliceName value="DataCarrierIdentifier" />
+      <short value="Data carrier identifier" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier:DataCarrierIdentifier.system">
+      <path value="MedicinalProductPackaged.packageItem.identifier.system" />
+      <fixedUri value="https://farmalogg.no/produktkode" />
+    </element>
+  </differential>
+</StructureDefinition>
