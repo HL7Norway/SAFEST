@@ -57,6 +57,6 @@ http://ehelse.no/fhir/StructureDefinition/safest-Flag-v05 (evt SLV)
 
 ## Kontakt
 
-stine
+stine dot johansen at soprasteria dot com
 
 espen dot stranger dot seland at ehelse dot no
