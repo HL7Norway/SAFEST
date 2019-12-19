@@ -1,0 +1,30 @@
+<MedicinalProductPackaged>
+    <meta>
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPackaged" />
+    </meta>
+    <identifier>
+        <system value="http://ehelse.no/fhir/CodeSystem/FEST" />
+        <value value="" />
+    </identifier>
+    <identifier>
+        <system value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProductPackaged" />
+        <value value="" />
+    </identifier>
+    <subject>
+    </subject>
+    <legalStatusOfSupply>
+    </legalStatusOfSupply>
+    <packageItem>
+        <identifier>
+        <system value="https://farmalogg.no/produktkode" />
+        <value value="" />
+    </identifier>
+        <packageItem>
+    
+        </packageItem>
+        <quantity>
+        </quantity>
+        <manufacturedItem>
+        </manufacturedItem>
+    </packageItem>
+</MedicinalProductPackaged>
