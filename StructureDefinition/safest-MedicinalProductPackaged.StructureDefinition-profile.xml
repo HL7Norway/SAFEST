@@ -2,15 +2,15 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="0c2997cd-c746-4392-9c01-f2baeb11b3c6" />
   <meta>
-    <versionId value="7" />
-    <lastUpdated value="2019-12-19T13:02:46.994+00:00" />
+    <versionId value="12" />
+    <lastUpdated value="2020-02-04T08:54:08.799+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPackaged" />
   <version value="0.0.1" />
   <name value="safest-MedicinalProductPackaged" />
   <title value="safest-medicinalproductpackaged" />
   <status value="draft" />
-  <date value="2019-12-19T13:02:47.5052113Z" />
+  <date value="2020-02-04T08:54:07.8519694Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -36,14 +36,18 @@
     <element id="MedicinalProductPackaged.extension:itemNumber">
       <path value="MedicinalProductPackaged.extension" />
       <sliceName value="itemNumber" />
-      <short value="itemNumber for the Package " />
-      <definition value="Item number for the package&#xD;&#xA;Norwegian: varenummer" />
+      <short value="item number for package" />
+      <definition value="Itemnumber (varenummer) for the specified package. " />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-productcode" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-itemnumber" />
       </type>
+    </element>
+    <element id="MedicinalProductPackaged.extension:itemNumber.value[x]">
+      <path value="MedicinalProductPackaged.extension.value[x]" />
+      <short value="The actual item number for the specific package" />
     </element>
     <element id="MedicinalProductPackaged.identifier">
       <path value="MedicinalProductPackaged.identifier" />
@@ -71,14 +75,14 @@
       <path value="MedicinalProductPackaged.identifier.value" />
       <min value="1" />
     </element>
-    <element id="MedicinalProductPackaged.identifier:nationalIdentifier">
+    <element id="MedicinalProductPackaged.identifier:safestIdentifier">
       <path value="MedicinalProductPackaged.identifier" />
-      <sliceName value="nationalIdentifier" />
+      <sliceName value="safestIdentifier" />
       <short value="The national ID provided by SAFEST" />
       <definition value="The new ID which SAFEST provide in its core-module." />
       <max value="1" />
     </element>
-    <element id="MedicinalProductPackaged.identifier:nationalIdentifier.system">
+    <element id="MedicinalProductPackaged.identifier:safestIdentifier.system">
       <path value="MedicinalProductPackaged.identifier.system" />
       <fixedUri value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProductPackaged" />
     </element>
@@ -86,6 +90,33 @@
       <path value="MedicinalProductPackaged.legalStatusOfSupply.coding.system" />
       <short value="OID from Volven" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7421" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.extension">
+      <path value="MedicinalProductPackaged.packageItem.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.extension:retailPack">
+      <path value="MedicinalProductPackaged.packageItem.extension" />
+      <sliceName value="retailPack" />
+      <short value="Is package a retail package" />
+      <definition value="Identifies whether or not the package is available as retail package" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/safest-retailPack" />
+      </type>
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.extension:retailPack.value[x]">
+      <path value="MedicinalProductPackaged.packageItem.extension.value[x]" />
+      <definition value="Value of extension" />
+      <comment value="true/false" />
     </element>
     <element id="MedicinalProductPackaged.packageItem.identifier">
       <path value="MedicinalProductPackaged.packageItem.identifier" />
@@ -105,6 +136,13 @@
     <element id="MedicinalProductPackaged.packageItem.identifier:dataCarrierIdentifier.system">
       <path value="MedicinalProductPackaged.packageItem.identifier.system" />
       <fixedUri value="https://farmalogg.no/produktkode" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier:safestIdentifier">
+      <path value="MedicinalProductPackaged.packageItem.identifier" />
+      <sliceName value="safestIdentifier" />
+      <short value="The national ID provided by SAFEST" />
+      <definition value="The new ID which SAFEST provide in its core-module." />
+      <max value="1" />
     </element>
   </differential>
 </StructureDefinition>

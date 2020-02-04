@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="3b05748a-ae4b-4ef5-aa6b-2b1a01b54cc9" />
+  <id value="f2c44480-5d34-40c0-98d0-bce7f0bbbc4b" />
   <meta>
     <versionId value="4" />
-    <lastUpdated value="2020-02-04T08:30:09.205+00:00" />
+    <lastUpdated value="2020-02-04T08:33:54.69+00:00" />
   </meta>
-  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-itemnumber" />
-  <name value="safest-itemnumber" />
+  <url value="http://example.org/fhir/StructureDefinition/safest-retailPack" />
+  <name value="safest-retailPack" />
   <status value="draft" />
-  <date value="2020-02-04T08:30:08.9935455Z" />
+  <date value="2020-02-04T08:33:54.3666498Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -19,7 +19,7 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="MedicinalProductPackaged" />
+    <expression value="MedicinalProductPackaged.packageItem" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -27,13 +27,15 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://legemiddelverket.no/fhir/StructureDefinition/safest-itemnumber" />
+      <fixedUri value="http://example.org/fhir/StructureDefinition/safest-retailPack" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
+      <min value="1" />
       <type>
-        <code value="string" />
+        <code value="boolean" />
       </type>
+      <isModifier value="false" />
     </element>
   </differential>
 </StructureDefinition>
