@@ -2,15 +2,15 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="0c2997cd-c746-4392-9c01-f2baeb11b3c6" />
   <meta>
-    <versionId value="14" />
-    <lastUpdated value="2020-02-07T07:03:21.74+00:00" />
+    <versionId value="15" />
+    <lastUpdated value="2020-02-07T07:13:38.725+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPackaged" />
   <version value="0.0.1" />
   <name value="safest-MedicinalProductPackaged" />
   <title value="safest-medicinalproductpackaged" />
   <status value="draft" />
-  <date value="2020-02-07T07:03:21.5371942Z" />
+  <date value="2020-02-07T07:13:38.4972814Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -69,10 +69,6 @@
       <short value="Identification of LegemiddelPakning" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/FEST" />
     </element>
-    <element id="MedicinalProductPackaged.identifier:legemiddelPakningID.value">
-      <path value="MedicinalProductPackaged.identifier.value" />
-      <min value="1" />
-    </element>
     <element id="MedicinalProductPackaged.identifier:safestIdentifier">
       <path value="MedicinalProductPackaged.identifier" />
       <sliceName value="safestIdentifier" />
@@ -84,6 +80,10 @@
       <path value="MedicinalProductPackaged.identifier.system" />
       <fixedUri value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProductPackaged" />
     </element>
+    <element id="MedicinalProductPackaged.identifier:safestIdentifier.value">
+      <path value="MedicinalProductPackaged.identifier.value" />
+      <min value="1" />
+    </element>
     <element id="MedicinalProductPackaged.legalStatusOfSupply.coding">
       <path value="MedicinalProductPackaged.legalStatusOfSupply.coding" />
       <short value="Code defined by Volven" />
@@ -93,6 +93,11 @@
       <path value="MedicinalProductPackaged.legalStatusOfSupply.coding.system" />
       <short value="OID from Volven" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7421" />
+    </element>
+    <element id="MedicinalProductPackaged.marketingAuthorization">
+      <path value="MedicinalProductPackaged.marketingAuthorization" />
+      <short value="The regulatory authorization of this packaged item" />
+      <definition value="The regulatory authorization of this packaged item" />
     </element>
     <element id="MedicinalProductPackaged.packageItem.extension">
       <path value="MedicinalProductPackaged.packageItem.extension" />

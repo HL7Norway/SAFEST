@@ -1,30 +1,54 @@
-<MedicinalProductPackaged>
+<?xml version="1.0" encoding="utf-8"?>
+<MedicinalProductPackaged xmlns="http://hl7.org/fhir">
+    <id value="example" />
     <meta>
+        <versionId value="2" />
+        <lastUpdated value="2020-02-07T08:56:20.46+00:00" />
         <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPackaged" />
     </meta>
     <identifier>
         <system value="http://ehelse.no/fhir/CodeSystem/FEST" />
-        <value value="" />
+        <value value="F4D21731-BA26-4043-A3BB-CADB4E7D0106" />
     </identifier>
     <identifier>
         <system value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProductPackaged" />
-        <value value="" />
+        <value value="example" />
     </identifier>
     <subject>
+        <reference value="MedicinalProduct/1234" />
     </subject>
     <legalStatusOfSupply>
+        <coding>
+            <system value="urn:oid:2.16.578.1.12.4.1.1.7421" />
+            <code value="F" />
+            <display value="Reseptgruppe F" />
+        </coding>
     </legalStatusOfSupply>
     <packageItem>
         <identifier>
-        <system value="https://farmalogg.no/produktkode" />
-        <value value="" />
-    </identifier>
-        <packageItem>
-    
-        </packageItem>
+            <system value="https://farmalogg.no/produktkode" />
+            <value value="someValue" />
+        </identifier>
+        <type>
+            <coding>
+                <system value="urn:oid:2.16.578.1.12.4.1.1.7449" />
+                <code value="169" />
+                <display value="Blisterpakning" />
+            </coding>
+        </type>
         <quantity>
+            <value value="20" />
+            <unit value="stk" />
         </quantity>
         <manufacturedItem>
+            <reference value="ManufacturedItem/2148" />
         </manufacturedItem>
+        <packageItem />
+        <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-retailpack">
+            <valueBoolean value="true" />
+        </extension>
     </packageItem>
+    <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-itemnumber">
+        <valueString value="100206" />
+    </extension>
 </MedicinalProductPackaged>
