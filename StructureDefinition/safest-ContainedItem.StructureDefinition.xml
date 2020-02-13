@@ -2,13 +2,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="72431192-f063-4f76-8363-aa1e6035dba8" />
   <meta>
-    <versionId value="1" />
-    <lastUpdated value="2020-02-12T11:45:53.679+00:00" />
+    <versionId value="2" />
+    <lastUpdated value="2020-02-13T11:45:28.35+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/containedItem" />
   <name value="safest-containedItem" />
   <status value="draft" />
-  <date value="2020-02-12T11:45:52.5343829Z" />
+  <date value="2020-02-13T11:45:27.9188533Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
