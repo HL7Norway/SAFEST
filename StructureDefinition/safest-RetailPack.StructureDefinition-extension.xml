@@ -2,13 +2,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="f2c44480-5d34-40c0-98d0-bce7f0bbbc4b" />
   <meta>
-    <versionId value="4" />
-    <lastUpdated value="2020-02-04T08:33:54.69+00:00" />
+    <versionId value="1" />
+    <lastUpdated value="2020-02-12T11:46:05.499+00:00" />
   </meta>
-  <url value="http://example.org/fhir/StructureDefinition/safest-retailPack" />
+  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-retailPack" />
   <name value="safest-retailPack" />
   <status value="draft" />
-  <date value="2020-02-04T08:33:54.3666498Z" />
+  <date value="2020-02-12T11:46:03.5627629Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -27,7 +27,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://example.org/fhir/StructureDefinition/safest-retailPack" />
+      <fixedUri value="http://legemiddelverket.no/fhir/StructureDefinition/safest-retailPack" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

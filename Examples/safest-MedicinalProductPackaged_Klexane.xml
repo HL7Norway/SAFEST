@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MedicinalProductPackaged xmlns="http://hl7.org/fhir">
+  <id value="exampleKlexane" />
+  <meta>
+    <versionId value="5" />
+    <lastUpdated value="2020-02-12T14:17:12.528+00:00" />
+    <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPackaged" />
+  </meta>
+  <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-itemnumber">
+    <valueString value="113415" />
+  </extension>
+  <identifier>
+    <system value="http://ehelse.no/fhir/CodeSystem/FEST" />
+    <value value="TBA" />
+  </identifier>
+  <identifier>
+    <system value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProductPackaged" />
+    <value value="exampleKlexane" />
+  </identifier>
+  <subject>
+    <reference value="MedicinalProduct/3547" />
+  </subject>
+  <description value="Ferdigfylt sprøyte, 10x0,2 ml" />
+  <legalStatusOfSupply>
+    <coding>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.7421" />
+      <code value="TBA" />
+      <display value="Reseptgruppe TBA" />
+    </coding>
+  </legalStatusOfSupply>
+  <packageItem>
+    <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-retailPack">
+      <valueBoolean value="true" />
+    </extension>
+    <identifier>
+      <use value="usual" />
+      <system value="https://farmalogg.no/produktkode/NTIN" />
+      <value value="07046261134156" />
+      <period>
+        <start value="2017-12-01" />
+      </period>
+    </identifier>
+    <identifier>
+      <use value="usual" />
+      <system value="https://farmalogg.no/produktkode/GTIN" />
+      <value value="03582910084679" />
+      <period>
+        <start value="2019-11-01" />
+      </period>
+    </identifier>
+    <identifier>
+      <system value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProductPackaged" />
+      <value value="exampleKlexaneEske" />
+    </identifier>
+    <type>
+      <coding>
+        <system value="urn:oid:2.16.578.1.12.4.1.1.7449" />
+        <code value="TBA" />
+        <display value="Eske" />
+      </coding>
+    </type>
+    <quantity>
+      <value value="1" />
+      <unit value="count" />
+    </quantity>
+    <packageItem>
+      <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-retailPack">
+        <valueBoolean value="false" />
+      </extension>
+      <extension url="http://legemiddelverket.no/fhir/StructureDefinition/containedItem">
+        <extension>
+          <valueReference>
+            <identifier>
+              <value value="ManufacturedItem/6587" />
+            </identifier>
+          </valueReference>
+        </extension>
+        <extension>
+          <valueInteger value="1" />
+        </extension>
+      </extension>
+      <identifier>
+        <use value="usual" />
+        <system value="https://farmalogg.no/produktkode/GTIN" />
+        <value value="05711939000485" />
+        <period>
+          <start value="2018-06-22" />
+        </period>
+      </identifier>
+      <identifier>
+        <system value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProductPackaged" />
+        <value value="exampleKlexaneFerdigSprøyte" />
+      </identifier>
+      <type>
+        <coding>
+          <system value="urn:oid:2.16.578.1.12.4.1.1.7449" />
+          <code value="TBA" />
+          <display value="Ferdigfylt Sprøyte" />
+        </coding>
+      </type>
+      <quantity>
+        <value value="10" />
+        <unit value="count" />
+      </quantity>
+    </packageItem>
+  </packageItem>
+</MedicinalProductPackaged>
