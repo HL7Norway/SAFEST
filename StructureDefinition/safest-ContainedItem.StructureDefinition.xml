@@ -40,6 +40,7 @@
       <sliceName value="item" />
       <short value="The manufactured item or device as contained in the packaged medicinal product" />
       <definition value="The manufactured item or device as contained in the packaged medicinal product" />
+      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:item.url">
@@ -50,6 +51,7 @@
       <path value="Extension.extension.value[x]" />
       <short value="Reference to contained item" />
       <definition value="Reference to the manufactured item or device as contained in the packaged medicinal product" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductManufactured" />
@@ -59,6 +61,7 @@
     <element id="Extension.extension:amount">
       <path value="Extension.extension" />
       <sliceName value="amount" />
+      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:amount.url">
@@ -69,6 +72,7 @@
       <path value="Extension.extension.value[x]" />
       <short value="The number of this type of item within this packaging" />
       <definition value="The number of this type of item within this packaging" />
+      <min value="1" />
       <type>
         <code value="integer" />
       </type>
@@ -79,8 +83,6 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="item" />
-      <definition value="The manufactured item or device as contained in the packaged medicinal product" />
       <max value="0" />
       <type>
         <code value="base64Binary" />
