@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="de53ae6d-d356-4dcb-a59e-7d8427134730" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2020-02-19T09:27:58.408+00:00" />
+  </meta>
+  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-substance" />
+  <name value="safest-substance" />
+  <status value="draft" />
+  <date value="2020-02-19T09:27:55.9474648Z" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MedicinalProductIngredient.specifiedSubstance" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://legemiddelverket.no/fhir/StructureDefinition/safest-substance" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-SubstanceSpecification" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

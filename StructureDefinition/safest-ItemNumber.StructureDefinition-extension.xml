@@ -2,13 +2,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="3b05748a-ae4b-4ef5-aa6b-2b1a01b54cc9" />
   <meta>
-    <versionId value="1" />
-    <lastUpdated value="2020-02-12T12:29:10.392+00:00" />
+    <versionId value="4" />
+    <lastUpdated value="2020-02-19T08:20:53.629+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-itemnumber" />
   <name value="safest-itemNumber" />
   <status value="draft" />
-  <date value="2020-02-12T12:29:09.1544551Z" />
+  <date value="2020-02-19T08:20:51.0486119Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -25,15 +25,63 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:itemNumber">
+      <path value="Extension.extension" />
+      <sliceName value="itemNumber" />
+      <short value="The itemnumber for medicinal product packaged" />
+      <definition value="The itemnumber for medicinal product packaged" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:itemNumber.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="itemNumber" />
+    </element>
+    <element id="Extension.extension:itemNumber.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:status">
+      <path value="Extension.extension" />
+      <sliceName value="status" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:status.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="status" />
+    </element>
+    <element id="Extension.extension:status.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <short value="Status code" />
+      <definition value="Status code for item number" />
+      <type>
+        <code value="Coding" />
+      </type>
+    </element>
+    <element id="Extension.extension:status.value[x].system">
+      <path value="Extension.extension.value[x].system" />
+      <fixedUri value="http://legemiddelverket.no/FHIR/itemnumberstatus" />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="http://legemiddelverket.no/fhir/StructureDefinition/safest-itemnumber" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <type>
-        <code value="string" />
-      </type>
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>

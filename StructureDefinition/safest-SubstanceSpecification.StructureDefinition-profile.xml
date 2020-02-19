@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="93ba1758-9f4a-49ca-83a6-2342646145fc" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2020-02-19T09:41:57.941+00:00" />
+  </meta>
+  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-substanceSpecification" />
+  <name value="safest-substanceSpecification" />
+  <status value="draft" />
+  <date value="2020-02-19T09:41:54.4795327Z" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="SubstanceSpecification" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/SubstanceSpecification" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="SubstanceSpecification.relationship">
+      <path value="SubstanceSpecification.relationship" />
+      <max value="0" />
+    </element>
+    <element id="SubstanceSpecification.relationship.amount[x]">
+      <path value="SubstanceSpecification.relationship.amount[x]" />
+      <max value="0" />
+    </element>
+    <element id="SubstanceSpecification.relationship.amount[x]:no name">
+      <path value="SubstanceSpecification.relationship.amountRatioLowLimit" />
+      <sliceName value="no name" />
+      <max value="0" />
+    </element>
+    <element id="SubstanceSpecification.relationship.amount[x]:no name">
+      <path value="SubstanceSpecification.relationship.amountType" />
+      <sliceName value="no name" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

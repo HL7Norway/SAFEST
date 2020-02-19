@@ -2,13 +2,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="55413776-25c3-4378-8b6b-15cd43a526e9" />
   <meta>
-    <versionId value="2" />
-    <lastUpdated value="2020-02-12T12:18:03.723+00:00" />
+    <versionId value="5" />
+    <lastUpdated value="2020-02-19T08:51:20.554+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductManufactured" />
   <name value="safest-medicinalProductManufactured" />
   <status value="draft" />
-  <date value="2020-02-12T12:18:01.745063Z" />
+  <date value="2020-02-19T08:51:18.0939658Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -20,4 +20,55 @@
   <type value="MedicinalProductManufactured" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured" />
   <derivation value="constraint" />
+  <differential>
+    <element id="MedicinalProductManufactured.extension">
+      <path value="MedicinalProductManufactured.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicinalProductManufactured.extension:flavor">
+      <path value="MedicinalProductManufactured.extension" />
+      <sliceName value="flavor" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-flavor" />
+      </type>
+    </element>
+    <element id="MedicinalProductManufactured.extension:flavor.value[x]">
+      <path value="MedicinalProductManufactured.extension.value[x]" />
+      <min value="1" />
+    </element>
+    <element id="MedicinalProductManufactured.extension:energyContent">
+      <path value="MedicinalProductManufactured.extension" />
+      <sliceName value="energyContent" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-energyContent" />
+      </type>
+    </element>
+    <element id="MedicinalProductManufactured.extension:energyContent.value[x]">
+      <path value="MedicinalProductManufactured.extension.value[x]" />
+      <min value="1" />
+    </element>
+    <element id="MedicinalProductManufactured.ingredient">
+      <path value="MedicinalProductManufactured.ingredient" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductIngredient" />
+      </type>
+    </element>
+    <element id="MedicinalProductManufactured.ingredient.reference">
+      <path value="MedicinalProductManufactured.ingredient.reference" />
+      <short value="Reference to MedicinalProductIngredient" />
+    </element>
+  </differential>
 </StructureDefinition>
