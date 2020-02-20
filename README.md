@@ -1,6 +1,11 @@
 # SAFEST
 ![SAFEST logo](SAFEST_LOGO.png)
-Formålet med prosjektet er å etablere en kilde til strukturert legemiddelinformasjon som understøtter behovene i sykehus. Informasjonen skal være elektronisk tilgjengelig gjennom et spørregrensesnitt til bruk i kliniske systemer.
+
+# Short description English
+The SAFEST project aims to medicinal product information according to IDMP in order to lay the groundwork for a “closed loop medication management”, as well as nutrition and support for prescribing drugs based on substance and not brand.
+
+# Kort beskrivelse Norsk
+Formålet med prosjektet er å etablere en kilde til strukturert legemiddelinformasjon som understøtter behovene i sykehus. Informasjonen skal være elektronisk tilgjengelig gjennom et spørregrensesnitt til bruk i kliniske systemer og baseres på internasjonale standarder som FHIR og IDMP.
 
 ## Bakgrunn
 Sykehusene i Norge har per i dag ikke tilgang til én felles kilde til strukturert legemiddelinformasjon til bruk i kliniske systemer. Innføringen av elektronisk kurve, elektronisk pasientjournal og Kjernejournal er kommet langt. Legemiddelverket leverer i dag kvalitetssikret strukturert legemiddelinformasjon til bruk i e-resept (FEST). Alle som skal forskrive en e-resept må bruke FEST som grunnlagskilde. Her ligger også en del beslutningsstøtte, som for eksempel interaksjoner og varsler om legemiddelmangel.
