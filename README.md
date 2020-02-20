@@ -23,8 +23,7 @@ Prosjektet jobber langs flere akser i samarbeid med mange aktører, blant annet 
 - Implementasjonsguider med metafiler
 
 ## Publisering
-Ferdige profiler publiseres også her: 
-(Fremtidig Simplifier-repo)
+Ferdige profiler publiseres også her: https://simplifier.net/safest
 
 ## Vi benytter Feature branch workflow
 

@@ -2,13 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="a3bdc64a-a72f-4f39-b702-c5e1aa497915" />
   <meta>
-    <versionId value="3" />
-    <lastUpdated value="2020-02-19T08:44:19.329+00:00" />
+    <versionId value="4" />
+    <lastUpdated value="2020-02-20T11:24:50.507+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-flavor" />
   <name value="safest-flavor" />
   <status value="draft" />
-  <date value="2020-02-19T08:44:16.8715749Z" />
+  <experimental value="true" />
+  <date value="2020-02-20T11:24:48.3380465Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="de53ae6d-d356-4dcb-a59e-7d8427134730" />
+  <id value="c42e02de-60e7-4aa9-a5ac-bc709e7acab2" />
   <meta>
     <versionId value="2" />
-    <lastUpdated value="2020-02-20T11:26:01.785+00:00" />
+    <lastUpdated value="2020-02-20T11:27:00.002+00:00" />
   </meta>
-  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-substance" />
-  <name value="safest-substance" />
+  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-ModifiedDate" />
+  <name value="safest-ModifiedDate" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2020-02-20T11:25:59.622016Z" />
+  <date value="2020-02-20T11:26:57.8262831Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -20,21 +20,25 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="MedicinalProductIngredient.specifiedSubstance" />
+    <expression value="Identifier" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Modified date" />
+      <definition value="The date for when the identifier or some information on the identifier was last changed" />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://legemiddelverket.no/fhir/StructureDefinition/safest-substance" />
+      <fixedUri value="http://legemiddelverket.no/fhir/StructureDefinition/safest-ModifiedDate" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-SubstanceSpecification" />
+        <code value="dateTime" />
       </type>
     </element>
   </differential>

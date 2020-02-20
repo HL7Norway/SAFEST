@@ -2,14 +2,15 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="0c2997cd-c746-4392-9c01-f2baeb11b3c6" />
   <meta>
-    <versionId value="6" />
-    <lastUpdated value="2020-02-12T14:17:22.603+00:00" />
+    <versionId value="9" />
+    <lastUpdated value="2020-02-20T11:23:52.066+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPackaged" />
   <version value="0.0.1" />
   <name value="safest-medicinalProductPackaged" />
   <status value="draft" />
-  <date value="2020-02-12T14:17:21.4596243Z" />
+  <experimental value="true" />
+  <date value="2020-02-20T11:23:49.846738Z" />
   <description value="SAFEST profile for Medicinal Product Packaged" />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -43,9 +44,13 @@
         <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-itemnumber" />
       </type>
     </element>
-    <element id="MedicinalProductPackaged.extension:itemNumber.value[x]">
-      <path value="MedicinalProductPackaged.extension.value[x]" />
-      <short value="The actual item number for the specific package" />
+    <element id="MedicinalProductPackaged.extension:itemNumber.extension:status">
+      <path value="MedicinalProductPackaged.extension.extension" />
+      <sliceName value="status" />
+    </element>
+    <element id="MedicinalProductPackaged.extension:itemNumber.extension:status.value[x]">
+      <path value="MedicinalProductPackaged.extension.extension.value[x]" />
+      <fixedCode value="http://legemiddelverket.no/FHIR/CodeSystem/itemNumberStatus" />
     </element>
     <element id="MedicinalProductPackaged.identifier">
       <path value="MedicinalProductPackaged.identifier" />
@@ -120,11 +125,6 @@
         <profile value="http://legemiddelverket.no/fhir/StructureDefinition/containedItem" />
       </type>
     </element>
-    <element id="MedicinalProductPackaged.packageItem.extension:containedItem.extension:item">
-      <path value="MedicinalProductPackaged.packageItem.extension.extension" />
-      <sliceName value="item" />
-      <short value="The manufactured item or device as contained in the packaged medicinal product" />
-    </element>
     <element id="MedicinalProductPackaged.packageItem.extension:containedItem.extension:amount">
       <path value="MedicinalProductPackaged.packageItem.extension.extension" />
       <sliceName value="amount" />
@@ -164,6 +164,26 @@
       <short value="Data carrier identifier" />
       <definition value="Data carrier identifier of type GTIN" />
     </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier:dataCarrierIdentifierGTIN.extension">
+      <path value="MedicinalProductPackaged.packageItem.identifier.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier:dataCarrierIdentifierGTIN.extension:modifiedDate">
+      <path value="MedicinalProductPackaged.packageItem.identifier.extension" />
+      <sliceName value="modifiedDate" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-ModifiedDate" />
+      </type>
+    </element>
     <element id="MedicinalProductPackaged.packageItem.identifier:dataCarrierIdentifierGTIN.system">
       <path value="MedicinalProductPackaged.packageItem.identifier.system" />
       <fixedUri value="https://farmalogg.no/produktkode/GTIN" />
@@ -184,6 +204,26 @@
       <path value="MedicinalProductPackaged.packageItem.identifier" />
       <sliceName value="dataCarrierIdentifierNTIN" />
       <definition value="Data carrier identifier of type NTIN" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier:dataCarrierIdentifierNTIN.extension">
+      <path value="MedicinalProductPackaged.packageItem.identifier.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier:dataCarrierIdentifierNTIN.extension:modifiedDate">
+      <path value="MedicinalProductPackaged.packageItem.identifier.extension" />
+      <sliceName value="modifiedDate" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-ModifiedDate" />
+      </type>
     </element>
     <element id="MedicinalProductPackaged.packageItem.identifier:dataCarrierIdentifierNTIN.system">
       <path value="MedicinalProductPackaged.packageItem.identifier.system" />

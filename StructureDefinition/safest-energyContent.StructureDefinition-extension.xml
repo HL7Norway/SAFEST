@@ -2,13 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="656d62bd-cb87-4cb6-985d-ae2be996fdc3" />
   <meta>
-    <versionId value="2" />
-    <lastUpdated value="2020-02-19T08:50:30.172+00:00" />
+    <versionId value="3" />
+    <lastUpdated value="2020-02-20T11:25:16.623+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-energyContent" />
   <name value="safest-energyContent" />
   <status value="draft" />
-  <date value="2020-02-19T08:50:27.7007687Z" />
+  <experimental value="true" />
+  <date value="2020-02-20T11:25:14.466879Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />

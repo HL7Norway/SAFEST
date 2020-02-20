@@ -2,13 +2,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="3b05748a-ae4b-4ef5-aa6b-2b1a01b54cc9" />
   <meta>
-    <versionId value="4" />
-    <lastUpdated value="2020-02-19T08:20:53.629+00:00" />
+    <versionId value="5" />
+    <lastUpdated value="2020-02-20T11:12:57.921+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-itemnumber" />
   <name value="safest-itemNumber" />
   <status value="draft" />
-  <date value="2020-02-19T08:20:51.0486119Z" />
+  <date value="2020-02-20T11:12:55.4003162Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -73,7 +73,7 @@
     </element>
     <element id="Extension.extension:status.value[x].system">
       <path value="Extension.extension.value[x].system" />
-      <fixedUri value="http://legemiddelverket.no/FHIR/itemnumberstatus" />
+      <fixedUri value="http://legemiddelverket.no/FHIR/CodeSystem/itemnumberstatus" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

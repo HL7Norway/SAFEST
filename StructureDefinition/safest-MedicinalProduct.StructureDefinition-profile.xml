@@ -2,14 +2,15 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="a6da3c25-c4e4-404c-ba8b-b85792267318" />
   <meta>
-    <versionId value="2" />
-    <lastUpdated value="2020-01-31T01:28:39.982+00:00" />
+    <versionId value="4" />
+    <lastUpdated value="2020-02-20T11:26:43.65+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProduct" />
   <name value="safest-MedicinalProduct" />
   <title value="safest-medicinalproduct" />
   <status value="draft" />
-  <date value="2020-01-31T01:28:37.6836373Z" />
+  <experimental value="true" />
+  <date value="2020-02-20T11:26:41.4779402Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -21,4 +22,43 @@
   <type value="MedicinalProduct" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicinalProduct" />
   <derivation value="constraint" />
+  <differential>
+    <element id="MedicinalProduct.identifier">
+      <path value="MedicinalProduct.identifier" />
+      <short value="Identifier as provided by SAFEST" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="MedicinalProduct.identifier.system">
+      <path value="MedicinalProduct.identifier.system" />
+      <fixedUri value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProduct" />
+    </element>
+    <element id="MedicinalProduct.combinedPharmaceuticalDoseForm.coding.system">
+      <path value="MedicinalProduct.combinedPharmaceuticalDoseForm.coding.system" />
+      <fixedUri value="http://legemiddelverket.no/FHIR/CodeSystem/DoseForm" />
+    </element>
+    <element id="MedicinalProduct.legalStatusOfSupply.coding.system">
+      <path value="MedicinalProduct.legalStatusOfSupply.coding.system" />
+      <definition value="Legal status of supply (prescription group) as presented from Volven" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7421" />
+    </element>
+    <element id="MedicinalProduct.productClassification.coding">
+      <path value="MedicinalProduct.productClassification.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicinalProduct.productClassification.coding:ATC">
+      <path value="MedicinalProduct.productClassification.coding" />
+      <sliceName value="ATC" />
+    </element>
+    <element id="MedicinalProduct.productClassification.coding:ATC.system">
+      <path value="MedicinalProduct.productClassification.coding.system" />
+      <fixedUri value="http://www.whocc.no/atc" />
+    </element>
+  </differential>
 </StructureDefinition>
