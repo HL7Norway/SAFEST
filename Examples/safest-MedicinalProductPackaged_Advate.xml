@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MedicinalProductPackaged xmlns="http://hl7.org/fhir">
+  <id value="exampleAdvate" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2020-02-24T10:45:20.174+00:00" />
+    <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPackaged" />
+  </meta>
+  <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-itemnumber">
+    <extension>
+      <valueString value="169939" />
+    </extension>
+    <extension>
+      <valueCoding>
+        <system value="http://legemiddelverket.no/FHIR/CodeSystem/itemnumberstatus" />
+        <code value="A" />
+        <display value="Active" />
+      </valueCoding>
+    </extension>
+  </extension>
+  <identifier>
+    <system value="http://ehelse.no/fhir/CodeSystem/FEST" />
+    <value value="TBA" />
+  </identifier>
+  <identifier>
+    <system value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProductPackaged" />
+    <value value="exampleAdvate" />
+  </identifier>
+  <subject>
+    <reference value="MedicinalProduct/6587" />
+  </subject>
+  <description value="Sett, hetteglass 500 IE + 2 ml, adapter" />
+  <legalStatusOfSupply>
+    <coding>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.7421" />
+      <code value="TBA" />
+      <display value="Reseptgruppe TBA" />
+    </coding>
+  </legalStatusOfSupply>
+  <packageItem>
+    <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-retailPack">
+      <valueBoolean value="true" />
+    </extension>
+    <identifier>
+      <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-modifiedDate">
+        <valueDate value="2017-12-01" />
+      </extension>
+      <use value="usual" />
+      <system value="https://farmalogg.no/produktkode/NTIN" />
+      <value value="07046261699396" />
+      <period>
+        <start value="2017-12-01" />
+      </period>
+    </identifier>
+    <identifier>
+      <system value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProductPackaged" />
+      <value value="exampleAdvateEske" />
+    </identifier>
+    <type>
+      <coding>
+        <system value="urn:oid:2.16.578.1.12.4.1.1.7449" />
+        <code value="TBA" />
+        <display value="Eske" />
+      </coding>
+    </type>
+    <quantity>
+      <value value="1" />
+      <unit value="count" />
+    </quantity>
+    <packageItem>
+      <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-retailPack">
+        <valueBoolean value="false" />
+      </extension>
+      <extension url="http://legemiddelverket.no/fhir/StructureDefinition/containedItem">
+        <extension>
+          <valueReference>
+            <identifier>
+              <value value="ManufacturedItem/3247" />
+            </identifier>
+          </valueReference>
+        </extension>
+        <extension>
+          <valueInteger value="1" />
+        </extension>
+      </extension>
+      <identifier>
+        <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-modifiedDate">
+          <valueDate value="2018-08-27" />
+        </extension>
+        <use value="usual" />
+        <system value="https://farmalogg.no/produktkode/GTIN" />
+        <value value="00642621027969" />
+        <period>
+          <start value="2018-08-27" />
+        </period>
+      </identifier>
+      <identifier>
+        <system value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProductPackaged" />
+        <value value="exampleAdvateHetteglass1" />
+      </identifier>
+      <type>
+        <coding>
+          <system value="urn:oid:2.16.578.1.12.4.1.1.7449" />
+          <code value="TBA" />
+          <display value="Hetteglass" />
+        </coding>
+      </type>
+      <quantity>
+        <value value="1" />
+        <unit value="count" />
+      </quantity>
+    </packageItem>
+    <packageItem>
+      <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-retailPack">
+        <valueBoolean value="false" />
+      </extension>
+      <extension url="http://legemiddelverket.no/fhir/StructureDefinition/containedItem">
+        <extension>
+          <valueReference>
+            <identifier>
+              <value value="ManufacturedItem/4567" />
+            </identifier>
+          </valueReference>
+        </extension>
+        <extension>
+          <valueInteger value="1" />
+        </extension>
+      </extension>
+      <identifier>
+        <system value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProductPackaged" />
+        <value value="exampleAdvateHetteglass2" />
+      </identifier>
+      <type>
+        <coding>
+          <system value="urn:oid:2.16.578.1.12.4.1.1.7449" />
+          <code value="TBA" />
+          <display value="Hetteglass" />
+        </coding>
+      </type>
+      <quantity>
+        <value value="1" />
+        <unit value="count" />
+      </quantity>
+    </packageItem>
+  </packageItem>
+</MedicinalProductPackaged>

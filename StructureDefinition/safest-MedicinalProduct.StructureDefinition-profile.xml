@@ -2,15 +2,15 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="a6da3c25-c4e4-404c-ba8b-b85792267318" />
   <meta>
-    <versionId value="4" />
-    <lastUpdated value="2020-02-20T11:26:43.65+00:00" />
+    <versionId value="5" />
+    <lastUpdated value="2020-02-20T12:57:43.685+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProduct" />
   <name value="safest-MedicinalProduct" />
   <title value="safest-medicinalproduct" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2020-02-20T11:26:41.4779402Z" />
+  <date value="2020-02-20T12:57:43.4941859Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -35,7 +35,9 @@
     </element>
     <element id="MedicinalProduct.combinedPharmaceuticalDoseForm.coding.system">
       <path value="MedicinalProduct.combinedPharmaceuticalDoseForm.coding.system" />
-      <fixedUri value="http://legemiddelverket.no/FHIR/CodeSystem/DoseForm" />
+      <short value="Volven" />
+      <definition value="Dose Form as presented in Volven" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7448" />
     </element>
     <element id="MedicinalProduct.legalStatusOfSupply.coding.system">
       <path value="MedicinalProduct.legalStatusOfSupply.coding.system" />

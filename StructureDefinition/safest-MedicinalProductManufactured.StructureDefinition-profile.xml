@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="55413776-25c3-4378-8b6b-15cd43a526e9" />
   <meta>
-    <versionId value="6" />
-    <lastUpdated value="2020-02-20T11:23:32.303+00:00" />
+    <versionId value="7" />
+    <lastUpdated value="2020-02-24T13:27:55.641+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductManufactured" />
   <name value="safest-medicinalProductManufactured" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2020-02-20T11:23:30.0128784Z" />
+  <date value="2020-02-24T13:27:54.1632293Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -35,7 +35,6 @@
     <element id="MedicinalProductManufactured.extension:flavor">
       <path value="MedicinalProductManufactured.extension" />
       <sliceName value="flavor" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -49,8 +48,6 @@
     <element id="MedicinalProductManufactured.extension:energyContent">
       <path value="MedicinalProductManufactured.extension" />
       <sliceName value="energyContent" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-energyContent" />
@@ -59,6 +56,10 @@
     <element id="MedicinalProductManufactured.extension:energyContent.value[x]">
       <path value="MedicinalProductManufactured.extension.value[x]" />
       <min value="1" />
+    </element>
+    <element id="MedicinalProductManufactured.manufacturedDoseForm.coding.system">
+      <path value="MedicinalProductManufactured.manufacturedDoseForm.coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7448" />
     </element>
     <element id="MedicinalProductManufactured.ingredient">
       <path value="MedicinalProductManufactured.ingredient" />
