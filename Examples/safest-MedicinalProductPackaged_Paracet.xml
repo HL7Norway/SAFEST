@@ -7,7 +7,16 @@
     <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPackaged" />
   </meta>
   <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-itemnumber">
-    <valueString value="100206" />
+    <extension>
+      <valueString value="100206" />
+    </extension>
+    <extension>
+      <valueCoding>
+          <system value="http://legemiddelverket.no/FHIR/CodeSystem/itemnumberstatus" />
+          <code value="A" />
+          <display value="Active" />
+      </valueCoding>
+    </extension>
   </extension>
   <identifier>
     <system value="http://ehelse.no/fhir/CodeSystem/FEST" />
