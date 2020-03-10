@@ -2,8 +2,8 @@
 <MedicinalProductPackaged xmlns="http://hl7.org/fhir">
   <id value="exampleKlexane" />
   <meta>
-    <versionId value="5" />
-    <lastUpdated value="2020-02-12T14:17:12.528+00:00" />
+    <versionId value="11" />
+    <lastUpdated value="2020-03-09T11:23:47.369+00:00" />
     <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPackaged" />
   </meta>
   <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-itemnumber">
@@ -12,9 +12,9 @@
     </extension>
     <extension>
       <valueCoding>
-          <system value="http://legemiddelverket.no/FHIR/CodeSystem/itemnumberstatus" />
-          <code value="A" />
-          <display value="Active" />
+        <system value="http://legemiddelverket.no/FHIR/CodeSystem/itemnumberstatus" />
+        <code value="A" />
+        <display value="Active" />
       </valueCoding>
     </extension>
   </extension>

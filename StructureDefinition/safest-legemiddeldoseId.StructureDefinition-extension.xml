@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="f90e94f1-2423-45b3-ab8b-dc96556e6b52" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2020-03-09T11:45:20.664+00:00" />
+  </meta>
+  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-legemiddeldoseId" />
+  <name value="safest-legemiddeldoseId" />
+  <status value="draft" />
+  <date value="2020-03-09T11:45:17.7106737Z" />
+  <description value="Legemiddeldose_ID as in FEST" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MedicinalProductManufactured" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://legemiddelverket.no/fhir/StructureDefinition/safest-legemiddeldoseId" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="Identifier" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
