@@ -2,8 +2,8 @@
 <MedicinalProductPackaged xmlns="http://hl7.org/fhir">
   <id value="exampleKlexane" />
   <meta>
-    <versionId value="11" />
-    <lastUpdated value="2020-03-09T11:23:47.369+00:00" />
+    <versionId value="12" />
+    <lastUpdated value="2020-03-12T05:56:58.54+00:00" />
     <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPackaged" />
   </meta>
   <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-itemnumber">
@@ -41,6 +41,9 @@
     <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-retailPack">
       <valueBoolean value="true" />
     </extension>
+    <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-singleUnit">
+      <valueBoolean value="false" />
+    </extension>
     <identifier>
       <use value="usual" />
       <system value="https://farmalogg.no/produktkode/NTIN" />
@@ -74,6 +77,9 @@
     </quantity>
     <packageItem>
       <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-retailPack">
+        <valueBoolean value="false" />
+      </extension>
+      <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-singleUnit">
         <valueBoolean value="false" />
       </extension>
       <extension url="http://legemiddelverket.no/fhir/StructureDefinition/containedItem">

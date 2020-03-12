@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="01b4e749-5a91-4cd5-b0fd-b134c48ec16b" />
+  <id value="f2c44480-5d34-40c0-98d0-bce7f0bbbc4b" />
   <meta>
-    <versionId value="1" />
-    <lastUpdated value="2020-03-12T05:53:25.788+00:00" />
+    <versionId value="5" />
+    <lastUpdated value="2020-03-12T05:51:29.506+00:00" />
   </meta>
-  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-retailPack" />
-  <name value="safest-retailPack" />
+  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-singleUnit" />
+  <name value="safest-singleUnit" />
   <status value="draft" />
-  <date value="2020-03-12T05:53:24.1684293Z" />
+  <date value="2020-03-12T05:51:26.9765698Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -25,9 +25,14 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Is item singl unit" />
+      <definition value="Bool value extension for use on packgeItem on MedicinalProductPackaged" />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://legemiddelverket.no/fhir/StructureDefinition/safest-retailPack" />
+      <fixedUri value="http://legemiddelverket.no/fhir/StructureDefinition/safest-singleUnit" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

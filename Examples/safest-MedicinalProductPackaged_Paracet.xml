@@ -2,8 +2,8 @@
 <MedicinalProductPackaged xmlns="http://hl7.org/fhir">
   <id value="exampleParacet" />
   <meta>
-    <versionId value="1" />
-    <lastUpdated value="2020-02-12T13:33:49.253+00:00" />
+    <versionId value="2" />
+    <lastUpdated value="2020-03-12T05:57:16.492+00:00" />
     <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPackaged" />
   </meta>
   <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-itemnumber">
@@ -12,9 +12,9 @@
     </extension>
     <extension>
       <valueCoding>
-          <system value="http://legemiddelverket.no/FHIR/CodeSystem/itemnumberstatus" />
-          <code value="A" />
-          <display value="Active" />
+        <system value="http://legemiddelverket.no/FHIR/CodeSystem/itemnumberstatus" />
+        <code value="A" />
+        <display value="Active" />
       </valueCoding>
     </extension>
   </extension>
@@ -39,6 +39,9 @@
   <packageItem>
     <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-retailPack">
       <valueBoolean value="true" />
+    </extension>
+    <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-singleUnit">
+      <valueBoolean value="false" />
     </extension>
     <extension url="http://legemiddelverket.no/fhir/StructureDefinition/containedItem">
       <extension>

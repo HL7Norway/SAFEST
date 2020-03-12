@@ -1,7 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <MedicinalProductPackaged xmlns="http://hl7.org/fhir">
   <id value="exampleMetadon" />
   <meta>
-    <lastUpdated value="2020-02-24T10:57:26.263+00:00" />
+    <versionId value="2" />
+    <lastUpdated value="2020-03-12T05:57:29.772+00:00" />
     <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPackaged" />
   </meta>
   <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-itemnumber">
@@ -39,6 +41,9 @@
     <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-retailPack">
       <valueBoolean value="true" />
     </extension>
+    <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-singleUnit">
+      <valueBoolean value="false" />
+    </extension>
     <identifier>
       <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-modifiedDate">
         <valueDate value="2017-12-01" />
@@ -67,6 +72,9 @@
     </quantity>
     <packageItem>
       <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-retailPack">
+        <valueBoolean value="false" />
+      </extension>
+      <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-singleUnit">
         <valueBoolean value="false" />
       </extension>
       <extension url="http://legemiddelverket.no/fhir/StructureDefinition/containedItem">
