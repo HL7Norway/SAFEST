@@ -2,13 +2,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="10cf68c1-132c-4978-9aee-f5d994e6cc06" />
   <meta>
-    <versionId value="2" />
-    <lastUpdated value="2020-02-12T11:44:57.01+00:00" />
+    <versionId value="3" />
+    <lastUpdated value="2020-03-12T07:33:24.001+00:00" />
   </meta>
-  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-Device" />
-  <name value="safest-device" />
+  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-DeviceDefinition" />
+  <name value="safest-DeviceDefinition" />
   <status value="draft" />
-  <date value="2020-02-12T11:44:55.878464Z" />
+  <date value="2020-03-12T07:33:22.7033326Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
