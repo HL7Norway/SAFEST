@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="de53ae6d-d356-4dcb-a59e-7d8427134730" />
+  <id value="26c483ee-11fa-4eec-9487-08169fb07cf4" />
   <meta>
-    <versionId value="2" />
-    <lastUpdated value="2020-02-20T11:26:01.785+00:00" />
+    <versionId value="1" />
+    <lastUpdated value="2020-03-12T06:41:47.775+00:00" />
   </meta>
-  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-substance" />
-  <name value="safest-substance" />
+  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-substanceReference" />
+  <name value="safest-substanceReference" />
   <status value="draft" />
-  <experimental value="true" />
-  <date value="2020-02-20T11:25:59.622016Z" />
+  <date value="2020-03-12T06:41:46.4899299Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -20,7 +19,7 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="MedicinalProductIngredient.substance" />
+    <expression value="CodeableConcept" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -28,13 +27,13 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://legemiddelverket.no/fhir/StructureDefinition/safest-substance" />
+      <fixedUri value="http://legemiddelverket.no/fhir/StructureDefinition/safest-substanceReference" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-SubstanceSpecification" />
+        <targetProfile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-substanceSpecification" />
       </type>
     </element>
   </differential>

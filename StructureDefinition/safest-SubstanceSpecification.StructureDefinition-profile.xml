@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="93ba1758-9f4a-49ca-83a6-2342646145fc" />
   <meta>
-    <versionId value="2" />
-    <lastUpdated value="2020-02-20T11:26:24.116+00:00" />
+    <versionId value="3" />
+    <lastUpdated value="2020-03-12T06:41:29.519+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-substanceSpecification" />
   <name value="safest-substanceSpecification" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2020-02-20T11:26:21.9461908Z" />
+  <date value="2020-03-12T06:41:28.2194558Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -31,14 +31,22 @@
       <max value="0" />
     </element>
     <element id="SubstanceSpecification.relationship.amount[x]:no name">
-      <path value="SubstanceSpecification.relationship.amountRatioLowLimit" />
+      <path value="SubstanceSpecification.relationship.amount[x]" />
       <sliceName value="no name" />
       <max value="0" />
     </element>
     <element id="SubstanceSpecification.relationship.amount[x]:no name">
-      <path value="SubstanceSpecification.relationship.amountType" />
+      <path value="SubstanceSpecification.relationship.amount[x]" />
       <sliceName value="no name" />
       <max value="0" />
+    </element>
+    <element id="SubstanceSpecification.relationship.amount[x]:no name">
+      <path value="SubstanceSpecification.relationship.amountRatioLowLimit" />
+      <sliceName value="no name" />
+    </element>
+    <element id="SubstanceSpecification.relationship.amount[x]:no name">
+      <path value="SubstanceSpecification.relationship.amountType" />
+      <sliceName value="no name" />
     </element>
   </differential>
 </StructureDefinition>

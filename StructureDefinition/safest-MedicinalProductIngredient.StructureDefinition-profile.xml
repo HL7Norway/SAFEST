@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="00518ad3-d79e-4447-8cc2-baa4af7f359c" />
   <meta>
-    <versionId value="4" />
-    <lastUpdated value="2020-02-20T11:25:39.219+00:00" />
+    <versionId value="7" />
+    <lastUpdated value="2020-03-12T06:40:49.522+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductIngredient" />
   <name value="safest-medicinalProductIngredient" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2020-02-20T11:25:37.0303594Z" />
+  <date value="2020-03-12T06:40:47.9356976Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -24,15 +24,14 @@
   <differential>
     <element id="MedicinalProductIngredient.identifier">
       <path value="MedicinalProductIngredient.identifier" />
-      <short value="Identifier for the ingredient " />
       <definition value="The identifier(s) of this Ingredient that are assigned by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate.&#xD;&#xA;&#xD;&#xA;Identifier defined by SAFEST" />
     </element>
     <element id="MedicinalProductIngredient.identifier.system">
       <path value="MedicinalProductIngredient.identifier.system" />
       <fixedUri value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProductIngredient" />
     </element>
-    <element id="MedicinalProductIngredient.specifiedSubstance.extension">
-      <path value="MedicinalProductIngredient.specifiedSubstance.extension" />
+    <element id="MedicinalProductIngredient.specifiedSubstance.code.extension">
+      <path value="MedicinalProductIngredient.specifiedSubstance.code.extension" />
       <slicing>
         <discriminator>
           <type value="value" />
@@ -41,14 +40,36 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicinalProductIngredient.specifiedSubstance.extension:substance">
-      <path value="MedicinalProductIngredient.specifiedSubstance.extension" />
-      <sliceName value="substance" />
-      <min value="1" />
+    <element id="MedicinalProductIngredient.specifiedSubstance.code.extension:substanceReference">
+      <path value="MedicinalProductIngredient.specifiedSubstance.code.extension" />
+      <sliceName value="substanceReference" />
+      <short value="Reference to Substance resource" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-substance" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-substanceReference" />
+      </type>
+    </element>
+    <element id="MedicinalProductIngredient.substance.code.extension">
+      <path value="MedicinalProductIngredient.substance.code.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicinalProductIngredient.substance.code.extension:substanceReference">
+      <path value="MedicinalProductIngredient.substance.code.extension" />
+      <sliceName value="substanceReference" />
+      <short value="Reference to Substance resource" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-substanceReference" />
       </type>
     </element>
   </differential>
