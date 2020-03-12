@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MedicinalProductManufactured xmlns="http://hl7.org/fhir">
-  <id value="exampleCanesten" />
+  <id value="exampleCanestenTablet" />
   <meta>
     <versionId value="2" />
     <lastUpdated value="2020-03-12T10:55:38.128+00:00" />
