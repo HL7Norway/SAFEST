@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MedicinalProductManufactured xmlns="http://hl7.org/fhir">
+  <id value="exampleCanesten" />
+  <meta>
+    <versionId value="3" />
+    <lastUpdated value="2020-03-12T10:55:50.535+00:00" />
+    <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductManufactured" />
+  </meta>
+  <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-flavor">
+    <extension>
+      <valueString value="65341" />
+    </extension>
+    <extension>
+      <valueCoding>
+        <system value="http://legemiddelverket.no/FHIR/CodeSystem/flavor" />
+        <code value="A" />
+        <display value="Active" />
+      </valueCoding>
+    </extension>
+  </extension>
+  <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-energyContent">
+    <extension>
+      <valueString value="5341" />
+    </extension>
+    <extension>
+      <valueCoding>
+        <system value="http://legemiddelverket.no/FHIR/CodeSystem/energyContent" />
+        <code value="kJ" />
+        <display value="kJ" />
+      </valueCoding>
+    </extension>
+  </extension>
+  <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-legemiddeldoseId">
+    <extension>
+      <valueString value="5341" />
+    </extension>
+    <extension>
+      <valueCoding>
+        <system value="http://legemiddelverket.no/FHIR/CodeSystem/legemiddeldoseId" />
+        <code value="5341" />
+        <display value="5341" />
+      </valueCoding>
+    </extension>
+  </extension>
+  <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-manufacturedDoseForm">
+    <extension>
+      <valueString value="exampleCanestenKrem" />
+    </extension>
+    <extension>
+      <valueCoding>
+        <system value="http://legemiddelverket.no/FHIR/CodeSystem/manufacturedDoseForm" />
+      </valueCoding>
+    </extension>
+  </extension>
+  <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductIngredient">
+    <extension>
+      <valueString value="exampleCanesten" />
+    </extension>
+    <extension>
+      <valueCoding>
+        <system value="http://legemiddelverket.no/FHIR/CodeSystem/medicinalProductIngredient" />
+        <code value="Canesten" />
+        <display value="Canesten" />
+      </valueCoding>
+    </extension>
+  </extension>
+</MedicinalProductManufactured>
