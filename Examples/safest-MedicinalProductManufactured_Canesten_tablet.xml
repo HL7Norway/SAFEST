@@ -20,13 +20,13 @@
   </extension>
   <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-energyContent">
     <extension>
-      <valueString value="5341" />
+      <valueString value="1534/441" />
     </extension>
     <extension>
       <valueCoding>
         <system value="http://legemiddelverket.no/FHIR/CodeSystem/energyContent" />
-        <code value="kJ" />
-        <display value="kJ" />
+        <code value="kJ/kcal" />
+        <display value="kJ/kcal" />
       </valueCoding>
     </extension>
   </extension>
@@ -37,14 +37,14 @@
     <extension>
       <valueCoding>
         <system value="http://legemiddelverket.no/FHIR/CodeSystem/legemiddeldoseId" />
-        <code value="5341" />
-        <display value="5341" />
+        <code value="LMR" />
+        <display value="LMR-5341" />
       </valueCoding>
     </extension>
   </extension>
   <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-manufacturedDoseForm">
     <extension>
-      <valueString value="exampleCanestenVaginaltablett" />
+      <valueString value="exampleCanestenVaginalTablet" />
     </extension>
     <extension>
       <valueCoding>
@@ -54,7 +54,7 @@
   </extension>
   <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductIngredient">
     <extension>
-      <valueString value="exampleCanesten" />
+      <valueString value="exampleCanestenTablet" />
     </extension>
     <extension>
       <valueCoding>
