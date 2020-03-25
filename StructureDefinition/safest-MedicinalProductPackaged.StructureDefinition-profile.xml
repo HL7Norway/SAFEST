@@ -5,9 +5,6 @@
     <versionId value="17" />
     <lastUpdated value="2020-03-12T07:50:56.1+00:00" />
   </meta>
-  <text>
-    <div xmlns="http://www.w3.org/1999/xhtml">Profile on MedicinalProductPackaged. As defined by SAFEST. </div>
-  </text>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPackaged" />
   <version value="0.0.1" />
   <name value="safest-MedicinalProductPackaged" />
