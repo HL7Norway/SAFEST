@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="93ba1758-9f4a-49ca-83a6-2342646145fc" />
   <meta>
-    <versionId value="3" />
-    <lastUpdated value="2020-03-12T06:41:29.519+00:00" />
+    <versionId value="6" />
+    <lastUpdated value="2020-03-26T07:36:45.435+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-substanceSpecification" />
   <name value="safest-substanceSpecification" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2020-03-12T06:41:28.2194558Z" />
+  <date value="2020-03-26T07:36:48.1458164Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -22,31 +22,51 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/SubstanceSpecification" />
   <derivation value="constraint" />
   <differential>
-    <element id="SubstanceSpecification.relationship">
-      <path value="SubstanceSpecification.relationship" />
-      <max value="0" />
+    <element id="SubstanceSpecification.identifier">
+      <path value="SubstanceSpecification.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="SubstanceSpecification.identifier:safestIdentifier">
+      <path value="SubstanceSpecification.identifier" />
+      <sliceName value="safestIdentifier" />
+      <short value="The national ID provided by SAFEST" />
+      <definition value="The new ID which SAFEST provide in its core-module." />
+      <min value="1" />
+    </element>
+    <element id="SubstanceSpecification.identifier:safestIdentifier.system">
+      <path value="SubstanceSpecification.identifier.system" />
+      <fixedUri value="http://legemiddelverket.no/fhir/SAFEST/SubstanceSpecification" />
+    </element>
+    <element id="SubstanceSpecification.identifier:virkestoffID">
+      <path value="SubstanceSpecification.identifier" />
+      <sliceName value="virkestoffID" />
+      <short value="Virkestoff ID as it appears in FEST M30" />
+      <definition value="The ID as presented in the FEST catalog Virkestoff used for mapping resources between SAFEST and FEST" />
+    </element>
+    <element id="SubstanceSpecification.identifier:virkestoffID.system">
+      <path value="SubstanceSpecification.identifier.system" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/FEST" />
+    </element>
+    <element id="SubstanceSpecification.relationship.substance[x]">
+      <path value="SubstanceSpecification.relationship.substance[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/SubstanceSpecification" />
+        <targetProfile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-substanceSpecification" />
+      </type>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
     </element>
     <element id="SubstanceSpecification.relationship.amount[x]">
       <path value="SubstanceSpecification.relationship.amount[x]" />
       <max value="0" />
-    </element>
-    <element id="SubstanceSpecification.relationship.amount[x]:no name">
-      <path value="SubstanceSpecification.relationship.amount[x]" />
-      <sliceName value="no name" />
-      <max value="0" />
-    </element>
-    <element id="SubstanceSpecification.relationship.amount[x]:no name">
-      <path value="SubstanceSpecification.relationship.amount[x]" />
-      <sliceName value="no name" />
-      <max value="0" />
-    </element>
-    <element id="SubstanceSpecification.relationship.amount[x]:no name">
-      <path value="SubstanceSpecification.relationship.amountRatioLowLimit" />
-      <sliceName value="no name" />
-    </element>
-    <element id="SubstanceSpecification.relationship.amount[x]:no name">
-      <path value="SubstanceSpecification.relationship.amountType" />
-      <sliceName value="no name" />
     </element>
   </differential>
 </StructureDefinition>

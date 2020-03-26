@@ -2,8 +2,8 @@
 <MedicinalProductManufactured xmlns="http://hl7.org/fhir">
   <id value="exampleCanestenTablet" />
   <meta>
-    <versionId value="3" />
-    <lastUpdated value="2020-03-26T05:53:16.294+00:00" />
+    <versionId value="4" />
+    <lastUpdated value="2020-03-26T06:15:12.008+00:00" />
     <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductManufactured" />
   </meta>
   <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-flavor">
@@ -25,8 +25,8 @@
   <manufacturedDoseForm>
     <coding>
       <system value="urn:oid:2.16.578.1.12.4.1.1.7448" />
-      <code value="TBA" />
-      <display value="TBA" />
+      <code value="123" />
+      <display value="Vagitorie" />
     </coding>
   </manufacturedDoseForm>
   <quantity>
