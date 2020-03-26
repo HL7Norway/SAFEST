@@ -2,66 +2,38 @@
 <MedicinalProductManufactured xmlns="http://hl7.org/fhir">
   <id value="exampleCanestenLotion" />
   <meta>
-    <versionId value="3" />
-    <lastUpdated value="2020-03-12T10:55:50.535+00:00" />
+    <versionId value="7" />
+    <lastUpdated value="2020-03-26T05:43:48.016+00:00" />
     <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductManufactured" />
   </meta>
   <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-flavor">
-    <extension>
-      <valueString value="65341" />
-    </extension>
-    <extension>
-      <valueCoding>
-        <system value="http://legemiddelverket.no/FHIR/CodeSystem/flavor" />
-        <code value="A" />
-        <display value="Active" />
-      </valueCoding>
-    </extension>
+    <valueString value="65341" />
   </extension>
   <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-energyContent">
-    <extension>
-      <valueString value="1813/433" />
-    </extension>
-    <extension>
-      <valueCoding>
-        <system value="http://legemiddelverket.no/FHIR/CodeSystem/energyContent" />
-        <code value="kJ/kcal" />
-        <display value="kJ/kcal" />
-      </valueCoding>
-    </extension>
+    <valueQuantity>
+      <value value="1813" />
+      <unit value="kJ/kcal" />
+    </valueQuantity>
   </extension>
   <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-legemiddeldoseId">
-    <extension>
-      <valueString value="5341" />
-    </extension>
-    <extension>
-      <valueCoding>
-        <system value="http://legemiddelverket.no/FHIR/CodeSystem/legemiddeldoseId" />
-        <code value="LMR" />
-        <display value="LMR" />
-      </valueCoding>
-    </extension>
+    <valueIdentifier>
+      <use value="usual" />
+      <system value="http://ehelse.no/fhir/CodeSystem/FEST" />
+      <value value="5341" />
+    </valueIdentifier>
   </extension>
-  <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-manufacturedDoseForm">
-    <extension>
-      <valueString value="exampleCanestenLotion" />
-    </extension>
-    <extension>
-      <valueCoding>
-        <system value="http://legemiddelverket.no/FHIR/CodeSystem/manufacturedDoseForm" />
-      </valueCoding>
-    </extension>
-  </extension>
-  <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductIngredient">
-    <extension>
-      <valueString value="exampleCanestenLotion" />
-    </extension>
-    <extension>
-      <valueCoding>
-        <system value="http://legemiddelverket.no/FHIR/CodeSystem/medicinalProductIngredient" />
-        <code value="Canesten" />
-        <display value="Canesten" />
-      </valueCoding>
-    </extension>
-  </extension>
+  <manufacturedDoseForm>
+    <coding>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.7448" />
+      <code value="TBA" />
+      <display value="TBA" />
+    </coding>
+  </manufacturedDoseForm>
+  <quantity>
+    <value value="20" />
+    <unit value="g" />
+  </quantity>
+  <ingredient>
+    <reference value="MedicinalProductIngredient/3547" />
+  </ingredient>
 </MedicinalProductManufactured>

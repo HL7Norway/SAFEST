@@ -3,7 +3,7 @@
   <id value="exampleCanestenTablet" />
   <meta>
     <versionId value="2" />
-    <lastUpdated value="2020-03-12T10:55:38.128+00:00" />
+    <lastUpdated value="2020-03-26T05:31:40.808+00:00" />
     <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductManufactured" />
   </meta>
   <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-flavor">
