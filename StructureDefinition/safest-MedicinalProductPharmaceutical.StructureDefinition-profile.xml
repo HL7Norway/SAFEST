@@ -2,13 +2,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="05aceafe-7f33-4348-9b22-6f1391a56b85" />
   <meta>
-    <versionId value="2" />
-    <lastUpdated value="2020-06-19T08:59:39.412+00:00" />
+    <versionId value="4" />
+    <lastUpdated value="2020-06-19T10:16:30.081+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPharmaceutical" />
   <name value="safest-MedicinalProductPharmaceutical" />
   <status value="draft" />
-  <date value="2020-06-19T08:59:05.6822495Z" />
+  <date value="2020-06-19T10:15:56.4241386Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -21,6 +21,26 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical" />
   <derivation value="constraint" />
   <differential>
+    <element id="MedicinalProductPharmaceutical.extension">
+      <path value="MedicinalProductPharmaceutical.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicinalProductPharmaceutical.extension:subject">
+      <path value="MedicinalProductPharmaceutical.extension" />
+      <sliceName value="subject" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-subject" />
+      </type>
+    </element>
     <element id="MedicinalProductPharmaceutical.identifier">
       <path value="MedicinalProductPharmaceutical.identifier" />
       <slicing>
