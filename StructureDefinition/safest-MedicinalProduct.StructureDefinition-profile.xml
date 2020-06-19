@@ -2,15 +2,15 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="a6da3c25-c4e4-404c-ba8b-b85792267318" />
   <meta>
-    <versionId value="5" />
-    <lastUpdated value="2020-02-20T12:57:43.685+00:00" />
+    <versionId value="7" />
+    <lastUpdated value="2020-06-17T05:30:00.793+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProduct" />
   <name value="safest-MedicinalProduct" />
   <title value="safest-medicinalproduct" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2020-02-20T12:57:43.4941859Z" />
+  <date value="2020-06-17T05:29:28.1895003Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -25,11 +25,24 @@
   <differential>
     <element id="MedicinalProduct.identifier">
       <path value="MedicinalProduct.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <short value="Identifier as provided by SAFEST" />
-      <min value="1" />
       <max value="1" />
     </element>
-    <element id="MedicinalProduct.identifier.system">
+    <element id="MedicinalProduct.identifier:safestIdentifier">
+      <path value="MedicinalProduct.identifier" />
+      <sliceName value="safestIdentifier" />
+      <short value="Identifier as provided by SAFEST" />
+      <definition value="Identifier as provided by SAFEST" />
+      <max value="1" />
+    </element>
+    <element id="MedicinalProduct.identifier:safestIdentifier.system">
       <path value="MedicinalProduct.identifier.system" />
       <fixedUri value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProduct" />
     </element>

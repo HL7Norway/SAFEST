@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="72431192-f063-4f76-8363-aa1e6035dba8" />
   <meta>
-    <versionId value="4" />
-    <lastUpdated value="2020-03-12T07:32:42.007+00:00" />
+    <versionId value="5" />
+    <lastUpdated value="2020-06-17T05:20:35.244+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/containedItem" />
   <name value="safest-containedItem" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2020-03-12T07:32:40.4593728Z" />
+  <date value="2020-06-17T05:20:02.3771798Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -59,17 +59,17 @@
         <targetProfile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-DeviceDefinition" />
       </type>
     </element>
-    <element id="Extension.extension:amount">
+    <element id="Extension.extension:quantity">
       <path value="Extension.extension" />
-      <sliceName value="amount" />
+      <sliceName value="quantity" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:amount.url">
+    <element id="Extension.extension:quantity.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="amount" />
+      <fixedUri value="quantity" />
     </element>
-    <element id="Extension.extension:amount.value[x]">
+    <element id="Extension.extension:quantity.value[x]">
       <path value="Extension.extension.value[x]" />
       <short value="The number of this type of item within this packaging" />
       <definition value="The number of this type of item within this packaging" />

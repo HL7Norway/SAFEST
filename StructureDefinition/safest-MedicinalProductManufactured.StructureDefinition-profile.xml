@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="55413776-25c3-4378-8b6b-15cd43a526e9" />
   <meta>
-    <versionId value="8" />
-    <lastUpdated value="2020-03-09T11:47:00.062+00:00" />
+    <versionId value="11" />
+    <lastUpdated value="2020-06-17T05:36:05.385+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductManufactured" />
   <name value="safest-medicinalProductManufactured" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2020-03-09T11:46:57.1609958Z" />
+  <date value="2020-06-17T05:35:32.5236302Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -61,7 +61,6 @@
       <path value="MedicinalProductManufactured.extension" />
       <sliceName value="legemiddeldoseID" />
       <short value="Legemiddeldose id from FEST" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -71,6 +70,20 @@
     <element id="MedicinalProductManufactured.extension:legemiddeldoseID.value[x].system">
       <path value="MedicinalProductManufactured.extension.value[x].system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/FEST" />
+    </element>
+    <element id="MedicinalProductManufactured.extension:safestIdentifier">
+      <path value="MedicinalProductManufactured.extension" />
+      <sliceName value="safestIdentifier" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-safestIdentifier" />
+      </type>
+    </element>
+    <element id="MedicinalProductManufactured.extension:safestIdentifier.value[x].system">
+      <path value="MedicinalProductManufactured.extension.value[x].system" />
+      <fixedUri value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProductManufactured" />
     </element>
     <element id="MedicinalProductManufactured.manufacturedDoseForm.coding.system">
       <path value="MedicinalProductManufactured.manufacturedDoseForm.coding.system" />
