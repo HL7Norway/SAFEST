@@ -2,15 +2,15 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="a6da3c25-c4e4-404c-ba8b-b85792267318" />
   <meta>
-    <versionId value="7" />
-    <lastUpdated value="2020-06-17T05:30:00.793+00:00" />
+    <versionId value="8" />
+    <lastUpdated value="2020-07-28T07:48:48.031+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProduct" />
   <name value="safest-MedicinalProduct" />
   <title value="safest-medicinalproduct" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2020-06-17T05:29:28.1895003Z" />
+  <date value="2020-07-28T07:48:47.0477069Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -23,6 +23,26 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicinalProduct" />
   <derivation value="constraint" />
   <differential>
+    <element id="MedicinalProduct.extension">
+      <path value="MedicinalProduct.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicinalProduct.extension:characteristics">
+      <path value="MedicinalProduct.extension" />
+      <sliceName value="characteristics" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-characteristics" />
+      </type>
+    </element>
     <element id="MedicinalProduct.identifier">
       <path value="MedicinalProduct.identifier" />
       <slicing>
@@ -48,9 +68,9 @@
     </element>
     <element id="MedicinalProduct.combinedPharmaceuticalDoseForm.coding.system">
       <path value="MedicinalProduct.combinedPharmaceuticalDoseForm.coding.system" />
-      <short value="Volven" />
-      <definition value="Dose Form as presented in Volven" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7448" />
+      <short value="TBA" />
+      <definition value="TBA" />
+      <fixedUri value="TBA" />
     </element>
     <element id="MedicinalProduct.legalStatusOfSupply.coding.system">
       <path value="MedicinalProduct.legalStatusOfSupply.coding.system" />
