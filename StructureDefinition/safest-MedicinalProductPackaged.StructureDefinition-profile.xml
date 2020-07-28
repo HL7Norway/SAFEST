@@ -120,36 +120,11 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicinalProductPackaged.packageItem.extension:retailPack">
-      <path value="MedicinalProductPackaged.packageItem.extension" />
-      <sliceName value="retailPack" />
-      <short value="Is package a retail package" />
-      <definition value="Identifies whether or not the package is available as retail package&#xD;&#xA;&#xD;&#xA;Identifiserer om pakningen er en forbrukerpakning" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-retailPack" />
-      </type>
-    </element>
-    <element id="MedicinalProductPackaged.packageItem.extension:singleUnit">
-      <path value="MedicinalProductPackaged.packageItem.extension" />
-      <sliceName value="singleUnit" />
-      <short value="Item is single unit (endose)" />
-      <definition value="Identifies whether the packaged item is a single dose&#xD;&#xA;&#xD;&#xA;Identifiserer om pakningen er endose" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-singleUnit" />
-      </type>
-    </element>
     <element id="MedicinalProductPackaged.packageItem.extension:containedItem">
       <path value="MedicinalProductPackaged.packageItem.extension" />
       <sliceName value="containedItem" />
       <short value="Contained item in package" />
       <definition value="The manufactured item or device in the package&#xD;&#xA;&#xD;&#xA;Produsert legemiddel eller utstyr som ligger i pakningen" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
