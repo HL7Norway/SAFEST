@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MedicinalProductPharmaceutical xmlns="http://hl7.org/fhir">
+  <id value="exampleNutrition" />
+  <meta>
+    <versionId value="8" />
+    <lastUpdated value="2020-07-28T13:16:08.692+00:00" />
+    <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPharmaceutical" />
+  </meta>
+  <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-subject">
+    <valueReference>
+      <identifier>
+        <value value="MedicinalProduct/3247" />
+      </identifier>
+    </valueReference>
+  </extension>
+  <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-Property">
+    <extension url="type">
+      <valueCoding>
+        <system value="http://legemiddelverket.no/fhir/CodeSystem/NutritionProperties" />
+        <code value="SourcesOfProtein" />
+        <display value="Sources Of Protein" />
+      </valueCoding>
+    </extension>
+    <extension url="value">
+      <valueString value="Avokado, melk" />
+    </extension>
+  </extension>
+  <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-Property">
+    <extension url="type">
+      <valueCoding>
+        <system value="http://legemiddelverket.no/fhir/CodeSystem/NutritionProperties" />
+        <code value="pH" />
+        <display value="pH" />
+      </valueCoding>
+    </extension>
+    <extension url="value">
+      <valueDecimal value="5.5" />
+    </extension>
+  </extension>
+  <identifier>
+    <system value="http://ehelse.no/fhir/CodeSystem/FEST" />
+    <value value="TBA" />
+  </identifier>
+  <identifier>
+    <system value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProductPharmaceutical" />
+    <value value="exampleNutrition" />
+  </identifier>
+  <administrableDoseForm>
+    <coding>
+      <system value="TBA" />
+      <code value="TBA" />
+      <display value="TBA" />
+    </coding>
+  </administrableDoseForm>
+  <routeOfAdministration>
+    <code>
+      <coding>
+        <system value="TBA" />
+        <code value="TBA" />
+        <display value="TBA" />
+      </coding>
+    </code>
+  </routeOfAdministration>
+</MedicinalProductPharmaceutical>
