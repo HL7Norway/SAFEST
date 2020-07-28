@@ -2,15 +2,15 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="0c2997cd-c746-4392-9c01-f2baeb11b3c6" />
   <meta>
-    <versionId value="23" />
-    <lastUpdated value="2020-07-28T08:19:39.714+00:00" />
+    <versionId value="24" />
+    <lastUpdated value="2020-07-28T08:34:59.811+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPackaged" />
   <version value="0.0.1" />
   <name value="safest-MedicinalProductPackaged" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2020-07-28T08:19:38.5018328Z" />
+  <date value="2020-07-28T08:34:58.6160702Z" />
   <description value="A medicinal product in a container or package as defined by SAFEST." />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -27,31 +27,6 @@
     <element id="MedicinalProductPackaged">
       <path value="MedicinalProductPackaged" />
       <definition value="A medicinal product in a container or package as defined by SAFEST." />
-    </element>
-    <element id="MedicinalProductPackaged.extension">
-      <path value="MedicinalProductPackaged.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicinalProductPackaged.extension:itemNumber">
-      <path value="MedicinalProductPackaged.extension" />
-      <sliceName value="itemNumber" />
-      <short value="item number for package" />
-      <definition value="Itemnumber for the specified package.&#xD;&#xA;&#xD;&#xA;Varenummer på pakningen." />
-      <type>
-        <code value="Extension" />
-        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-itemnumber" />
-      </type>
-    </element>
-    <element id="MedicinalProductPackaged.extension:itemNumber.extension:itemNumber">
-      <path value="MedicinalProductPackaged.extension.extension" />
-      <sliceName value="itemNumber" />
-      <definition value="The itemnumber for the packaged medicinal product" />
     </element>
     <element id="MedicinalProductPackaged.identifier">
       <path value="MedicinalProductPackaged.identifier" />
@@ -90,6 +65,15 @@
     <element id="MedicinalProductPackaged.identifier:safestIdentifier.value">
       <path value="MedicinalProductPackaged.identifier.value" />
       <min value="1" />
+    </element>
+    <element id="MedicinalProductPackaged.identifier:itemNumber">
+      <path value="MedicinalProductPackaged.identifier" />
+      <sliceName value="itemNumber" />
+      <short value="The itemnumber for medicinal product packaged" />
+    </element>
+    <element id="MedicinalProductPackaged.identifier:itemNumber.system">
+      <path value="MedicinalProductPackaged.identifier.system" />
+      <fixedUri value="TBA" />
     </element>
     <element id="MedicinalProductPackaged.legalStatusOfSupply">
       <path value="MedicinalProductPackaged.legalStatusOfSupply" />
