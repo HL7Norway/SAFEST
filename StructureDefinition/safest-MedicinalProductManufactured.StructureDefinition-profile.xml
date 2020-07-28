@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="55413776-25c3-4378-8b6b-15cd43a526e9" />
   <meta>
-    <versionId value="11" />
-    <lastUpdated value="2020-06-17T05:36:05.385+00:00" />
+    <versionId value="12" />
+    <lastUpdated value="2020-07-28T08:29:32.549+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductManufactured" />
   <name value="safest-medicinalProductManufactured" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2020-06-17T05:35:32.5236302Z" />
+  <date value="2020-07-28T08:29:31.3448938Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -32,31 +32,6 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicinalProductManufactured.extension:flavor">
-      <path value="MedicinalProductManufactured.extension" />
-      <sliceName value="flavor" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-flavor" />
-      </type>
-    </element>
-    <element id="MedicinalProductManufactured.extension:flavor.value[x]">
-      <path value="MedicinalProductManufactured.extension.value[x]" />
-      <min value="1" />
-    </element>
-    <element id="MedicinalProductManufactured.extension:energyContent">
-      <path value="MedicinalProductManufactured.extension" />
-      <sliceName value="energyContent" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-energyContent" />
-      </type>
-    </element>
-    <element id="MedicinalProductManufactured.extension:energyContent.value[x]">
-      <path value="MedicinalProductManufactured.extension.value[x]" />
-      <min value="1" />
-    </element>
     <element id="MedicinalProductManufactured.extension:legemiddeldoseID">
       <path value="MedicinalProductManufactured.extension" />
       <sliceName value="legemiddeldoseID" />
@@ -74,7 +49,6 @@
     <element id="MedicinalProductManufactured.extension:safestIdentifier">
       <path value="MedicinalProductManufactured.extension" />
       <sliceName value="safestIdentifier" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
