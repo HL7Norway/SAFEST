@@ -1,0 +1,79 @@
+{
+  "resourceType": "MedicinalProduct",
+  "id": "0a6d2fd6-5bda-45bb-924f-260c61d50e41",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-07-31T12:47:48.878+00:00",
+    "profile": [
+      "http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProduct"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://legemiddelverket.no/fhir/StructureDefinition/safest-characteristics",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "TypeOfApplication",
+            "code": "527"
+          }
+        ],
+        "text": "Parallell import"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://legemiddelverket.no/fhir/SAFEST/MedicinalProduct",
+      "value": "42"
+    }
+  ],
+  "domain": {
+    "system": "https://spor.ema.europa.eu/rmswi/#/lists/100000000004",
+    "code": "100000000012",
+    "display": "Human use"
+  },
+  "legalStatusOfSupply": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.578.1.12.4.1.1.7421",
+        "code": "C"
+      }
+    ],
+    "text": "Reseptgruppe C"
+  },
+  "productClassification": [
+    {
+      "coding": [
+        {
+          "system": "http://www.whocc.no/atc",
+          "code": "A"
+        }
+      ],
+      "text": "Alimentary tract and metabolism"
+    }
+  ],
+  "name": [
+    {
+      "productName": "Paracet 500mg 31.07.2020 14.39.38",
+      "namePart": [
+        {
+          "part": "Paracet",
+          "type": {
+            "system": "https://spor.ema.europa.eu/rmswi/#/lists/220000000000",
+            "code": "220000000002",
+            "display": "Invented name part"
+          }
+        },
+        {
+          "part": "500mg",
+          "type": {
+            "system": "https://spor.ema.europa.eu/rmswi/#/lists/220000000000",
+            "code": "220000000004",
+            "display": "Strength part"
+          }
+        }
+      ]
+    }
+  ]
+}

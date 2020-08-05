@@ -22,7 +22,7 @@
       </valueCoding>
     </extension>
     <extension url="value">
-      <valueString value="Avokado, melk" />
+      <valueString value="Myse" />
     </extension>
   </extension>
   <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-Property">
@@ -35,6 +35,30 @@
     </extension>
     <extension url="value">
       <valueDecimal value="5.5" />
+    </extension>
+  </extension>
+  <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-Property">
+    <extension url="type">
+      <valueCoding>
+        <system value="http://legemiddelverket.no/fhir/CodeSystem/NutritionProperties" />
+        <code value="SourcesOfFat" />
+        <display value="Sources Of Fat" />
+      </valueCoding>
+    </extension>
+    <extension url="value">
+      <valueString value="en kilde til fett" />
+    </extension>
+  </extension>
+  <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-Property">
+    <extension url="type">
+      <valueCoding>
+        <system value="http://legemiddelverket.no/fhir/CodeSystem/NutritionProperties" />
+        <code value="FatContent" />
+        <display value="Fat content" />
+      </valueCoding>
+    </extension>
+    <extension url="value">
+      <valueDecimal value="3.4" />
     </extension>
   </extension>
   <identifier>
