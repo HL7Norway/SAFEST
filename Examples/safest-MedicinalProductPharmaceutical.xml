@@ -2,8 +2,8 @@
 <MedicinalProductPharmaceutical xmlns="http://hl7.org/fhir">
   <id value="exampleNutrition" />
   <meta>
-    <versionId value="8" />
-    <lastUpdated value="2020-07-28T13:16:08.692+00:00" />
+    <versionId value="9" />
+    <lastUpdated value="2020-08-05T05:41:50.815+00:00" />
     <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPharmaceutical" />
   </meta>
   <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-subject">
