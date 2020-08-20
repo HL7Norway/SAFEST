@@ -28,6 +28,18 @@
       <path value="MedicinalProductPackaged" />
       <definition value="A medicinal product in a container or package as defined by SAFEST." />
     </element>
+    <element id="MedicinalProductPackaged.meta.security.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.meta.security.display" />
+    </element>
+    <element id="MedicinalProductPackaged.meta.tag.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.meta.tag.display" />
+    </element>
     <element id="MedicinalProductPackaged.identifier">
       <path value="MedicinalProductPackaged.identifier" />
       <slicing>
@@ -39,6 +51,24 @@
       </slicing>
       <min value="1" />
     </element>
+    <element id="MedicinalProductPackaged.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.identifier.assigner.display" />
+    </element>
     <element id="MedicinalProductPackaged.identifier:legemiddelPakningID">
       <path value="MedicinalProductPackaged.identifier" />
       <sliceName value="legemiddelPakningID" />
@@ -46,10 +76,40 @@
       <definition value="The ID as presented in the FEST catalog LegemiddelPakningMerkevare used for mapping resources between SAFEST and FEST" />
       <max value="1" />
     </element>
+    <element id="MedicinalProductPackaged.identifier:legemiddelPakningID.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.identifier:legemiddelPakningID.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.identifier.type.text" />
+    </element>
     <element id="MedicinalProductPackaged.identifier:legemiddelPakningID.system">
       <path value="MedicinalProductPackaged.identifier.system" />
       <short value="Identification of LegemiddelPakning" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/FEST" />
+    </element>
+    <element id="MedicinalProductPackaged.identifier:legemiddelPakningID.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.identifier:legemiddelPakningID.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.identifier:legemiddelPakningID.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.identifier.assigner.display" />
     </element>
     <element id="MedicinalProductPackaged.identifier:safestIdentifier">
       <path value="MedicinalProductPackaged.identifier" />
@@ -57,6 +117,18 @@
       <short value="The national ID provided by SAFEST" />
       <definition value="The new ID which SAFEST provide in its core-module." />
       <max value="1" />
+    </element>
+    <element id="MedicinalProductPackaged.identifier:safestIdentifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.identifier:safestIdentifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.identifier.type.text" />
     </element>
     <element id="MedicinalProductPackaged.identifier:safestIdentifier.system">
       <path value="MedicinalProductPackaged.identifier.system" />
@@ -66,14 +138,80 @@
       <path value="MedicinalProductPackaged.identifier.value" />
       <min value="1" />
     </element>
+    <element id="MedicinalProductPackaged.identifier:safestIdentifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.identifier:safestIdentifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.identifier:safestIdentifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.identifier.assigner.display" />
+    </element>
     <element id="MedicinalProductPackaged.identifier:itemNumber">
       <path value="MedicinalProductPackaged.identifier" />
       <sliceName value="itemNumber" />
       <short value="The itemnumber for medicinal product packaged" />
     </element>
+    <element id="MedicinalProductPackaged.identifier:itemNumber.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.identifier:itemNumber.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.identifier.type.text" />
+    </element>
     <element id="MedicinalProductPackaged.identifier:itemNumber.system">
       <path value="MedicinalProductPackaged.identifier.system" />
       <fixedUri value="TBA" />
+    </element>
+    <element id="MedicinalProductPackaged.identifier:itemNumber.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.identifier:itemNumber.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.identifier:itemNumber.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.identifier.assigner.display" />
+    </element>
+    <element id="MedicinalProductPackaged.subject.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.subject.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.subject.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.subject.identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.subject.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.subject.display" />
     </element>
     <element id="MedicinalProductPackaged.legalStatusOfSupply">
       <path value="MedicinalProductPackaged.legalStatusOfSupply" />
@@ -89,10 +227,130 @@
       <short value="OID from Volven" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7421" />
     </element>
+    <element id="MedicinalProductPackaged.legalStatusOfSupply.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.legalStatusOfSupply.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.legalStatusOfSupply.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.legalStatusOfSupply.text" />
+    </element>
+    <element id="MedicinalProductPackaged.marketingStatus.country.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.marketingStatus.country.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.marketingStatus.country.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.marketingStatus.country.text" />
+    </element>
+    <element id="MedicinalProductPackaged.marketingStatus.jurisdiction.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.marketingStatus.jurisdiction.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.marketingStatus.jurisdiction.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.marketingStatus.jurisdiction.text" />
+    </element>
+    <element id="MedicinalProductPackaged.marketingStatus.status.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.marketingStatus.status.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.marketingStatus.status.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.marketingStatus.status.text" />
+    </element>
     <element id="MedicinalProductPackaged.marketingAuthorization">
       <path value="MedicinalProductPackaged.marketingAuthorization" />
       <short value="The regulatory authorization of this packaged item" />
       <definition value="The regulatory authorization of this packaged item" />
+    </element>
+    <element id="MedicinalProductPackaged.marketingAuthorization.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.marketingAuthorization.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.marketingAuthorization.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.marketingAuthorization.identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.marketingAuthorization.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.marketingAuthorization.display" />
+    </element>
+    <element id="MedicinalProductPackaged.manufacturer.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.manufacturer.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.manufacturer.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.manufacturer.identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.manufacturer.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.manufacturer.display" />
+    </element>
+    <element id="MedicinalProductPackaged.batchIdentifier.outerPackaging.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.batchIdentifier.outerPackaging.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.batchIdentifier.outerPackaging.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.batchIdentifier.outerPackaging.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.batchIdentifier.outerPackaging.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.batchIdentifier.outerPackaging.assigner.display" />
+    </element>
+    <element id="MedicinalProductPackaged.batchIdentifier.immediatePackaging.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.batchIdentifier.immediatePackaging.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.batchIdentifier.immediatePackaging.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.batchIdentifier.immediatePackaging.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.batchIdentifier.immediatePackaging.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.batchIdentifier.immediatePackaging.assigner.display" />
     </element>
     <element id="MedicinalProductPackaged.packageItem.extension">
       <path value="MedicinalProductPackaged.packageItem.extension" />
@@ -115,6 +373,28 @@
         <profile value="http://legemiddelverket.no/fhir/StructureDefinition/containedItem" />
       </type>
     </element>
+    <element id="MedicinalProductPackaged.packageItem.extension:containedItem.extension:item">
+      <path value="MedicinalProductPackaged.packageItem.extension.extension" />
+      <sliceName value="item" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.extension:containedItem.extension:item.value[x].identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.extension.extension.value[x].identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.extension:containedItem.extension:item.value[x].identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.extension.extension.value[x].identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.extension:containedItem.extension:item.value[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.extension.extension.value[x].display" />
+    </element>
     <element id="MedicinalProductPackaged.packageItem.identifier">
       <path value="MedicinalProductPackaged.packageItem.identifier" />
       <slicing>
@@ -126,6 +406,24 @@
       </slicing>
       <min value="1" />
     </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.identifier.assigner.display" />
+    </element>
     <element id="MedicinalProductPackaged.packageItem.identifier:safestIdentifier">
       <path value="MedicinalProductPackaged.packageItem.identifier" />
       <sliceName value="safestIdentifier" />
@@ -134,9 +432,39 @@
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier:safestIdentifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier:safestIdentifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.identifier.type.text" />
+    </element>
     <element id="MedicinalProductPackaged.packageItem.identifier:safestIdentifier.system">
       <path value="MedicinalProductPackaged.packageItem.identifier.system" />
       <fixedUri value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProductPackaged/PackageItem" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier:safestIdentifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier:safestIdentifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier:safestIdentifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.identifier.assigner.display" />
     </element>
     <element id="MedicinalProductPackaged.packageItem.identifier:dataCarrierIdentifier">
       <path value="MedicinalProductPackaged.packageItem.identifier" />
@@ -168,6 +496,36 @@
       <short value="Use to signal the status of the data carrier identifier." />
       <definition value="Use to signal the status of the data carrier identifier. &#xD;&#xA;&#xD;&#xA;For active -&gt; official&#xD;&#xA;For cancelled -&gt; old&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Other values: usual | official | temp | secondary | old (If known)" />
     </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier:dataCarrierIdentifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier:dataCarrierIdentifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier:dataCarrierIdentifier.assigner.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.identifier.assigner.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier:dataCarrierIdentifier.assigner.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.identifier.assigner.identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.identifier:dataCarrierIdentifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.identifier.assigner.display" />
+    </element>
     <element id="MedicinalProductPackaged.packageItem.type.coding">
       <path value="MedicinalProductPackaged.packageItem.type.coding" />
       <short value="Code defined by Volven" />
@@ -178,9 +536,447 @@
       <short value="OID from Volven" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7449" />
     </element>
+    <element id="MedicinalProductPackaged.packageItem.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.quantity.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.quantity.unit" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.material.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.material.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.material.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.material.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.alternateMaterial.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.alternateMaterial.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.alternateMaterial.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.alternateMaterial.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.device.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.device.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.device.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.device.identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.device.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.device.display" />
+    </element>
     <element id="MedicinalProductPackaged.packageItem.manufacturedItem">
       <path value="MedicinalProductPackaged.packageItem.manufacturedItem" />
       <max value="0" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.manufacturedItem.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.manufacturedItem.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.manufacturedItem.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.manufacturedItem.identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.manufacturedItem.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.manufacturedItem.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.identifier.assigner.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.quantity.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.quantity.unit" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.material.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.material.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.material.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.material.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.alternateMaterial.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.alternateMaterial.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.alternateMaterial.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.alternateMaterial.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.device.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.device.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.device.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.device.identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.device.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.device.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.manufacturedItem.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.manufacturedItem.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.manufacturedItem.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.manufacturedItem.identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.manufacturedItem.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.manufacturedItem.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.physicalCharacteristics.height.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.physicalCharacteristics.height.unit" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.physicalCharacteristics.width.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.physicalCharacteristics.width.unit" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.physicalCharacteristics.depth.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.physicalCharacteristics.depth.unit" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.physicalCharacteristics.weight.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.physicalCharacteristics.weight.unit" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.physicalCharacteristics.nominalVolume.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.physicalCharacteristics.nominalVolume.unit" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.physicalCharacteristics.externalDiameter.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.physicalCharacteristics.externalDiameter.unit" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.physicalCharacteristics.image.title">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.physicalCharacteristics.image.title" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.physicalCharacteristics.scoring.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.physicalCharacteristics.scoring.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.physicalCharacteristics.scoring.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.physicalCharacteristics.scoring.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.otherCharacteristics.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.otherCharacteristics.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.otherCharacteristics.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.otherCharacteristics.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.shelfLifeStorage.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.shelfLifeStorage.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.shelfLifeStorage.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.shelfLifeStorage.identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.shelfLifeStorage.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.shelfLifeStorage.identifier.assigner.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.shelfLifeStorage.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.shelfLifeStorage.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.shelfLifeStorage.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.shelfLifeStorage.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.shelfLifeStorage.period.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.shelfLifeStorage.period.unit" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.shelfLifeStorage.specialPrecautionsForStorage.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.shelfLifeStorage.specialPrecautionsForStorage.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.shelfLifeStorage.specialPrecautionsForStorage.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.shelfLifeStorage.specialPrecautionsForStorage.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.manufacturer.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.manufacturer.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.manufacturer.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.manufacturer.identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem.manufacturer.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.packageItem.manufacturer.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.physicalCharacteristics.height.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.physicalCharacteristics.height.unit" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.physicalCharacteristics.width.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.physicalCharacteristics.width.unit" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.physicalCharacteristics.depth.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.physicalCharacteristics.depth.unit" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.physicalCharacteristics.weight.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.physicalCharacteristics.weight.unit" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.physicalCharacteristics.nominalVolume.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.physicalCharacteristics.nominalVolume.unit" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.physicalCharacteristics.externalDiameter.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.physicalCharacteristics.externalDiameter.unit" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.physicalCharacteristics.image.title">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.physicalCharacteristics.image.title" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.physicalCharacteristics.scoring.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.physicalCharacteristics.scoring.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.physicalCharacteristics.scoring.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.physicalCharacteristics.scoring.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.otherCharacteristics.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.otherCharacteristics.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.otherCharacteristics.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.otherCharacteristics.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.shelfLifeStorage.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.shelfLifeStorage.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.shelfLifeStorage.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.shelfLifeStorage.identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.shelfLifeStorage.identifier.assigner.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.shelfLifeStorage.identifier.assigner.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.shelfLifeStorage.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.shelfLifeStorage.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.shelfLifeStorage.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.shelfLifeStorage.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.shelfLifeStorage.period.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.shelfLifeStorage.period.unit" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.shelfLifeStorage.specialPrecautionsForStorage.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.shelfLifeStorage.specialPrecautionsForStorage.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.shelfLifeStorage.specialPrecautionsForStorage.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.shelfLifeStorage.specialPrecautionsForStorage.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.manufacturer.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.manufacturer.identifier.type.coding.display" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.manufacturer.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.manufacturer.identifier.type.text" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.manufacturer.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicinalProductPackaged.packageItem.manufacturer.display" />
     </element>
   </differential>
 </StructureDefinition>
