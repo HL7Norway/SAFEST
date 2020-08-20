@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-authorizedPharmaceuticalDoseForm" />
+  <name value="safest-authorizedPharmaceuticalDoseForm.StructureDefinition-extension" />
+  <status value="draft" />
+  <description value="Extension for representing the Authorized Pharmaceutical Dose form for the medicinal product. This may be one of the following types:&#xD;&#xA;- Pharmaceutical dose form term&#xD;&#xA;- Combined pharmaceutical dose form term&#xD;&#xA;- Combined term &#xD;&#xA;- Combination package term" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MedicinalProduct" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <max value="1" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://legemiddelverket.no/fhir/StructureDefinition/safest-authorizedPharmaceuticalDoseForm" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
