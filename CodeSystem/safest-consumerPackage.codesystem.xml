@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="safest-consumerPackage.codesystem" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2020-07-28T12:04:27.138+00:00" />
+  </meta>
+  <url value="http://legemiddelverket.no/fhir/CodeSystem/ConsumerPackage" />
+  <version value="1.0.0" />
+  <name value="safest-consumerPackage.codesystem" />
+  <title value="SAFEST Consumer package codesystem" />
+  <status value="draft" />
+  <date value="2020-07-28T12:04:24.4544936+00:00" />
+  <publisher value="Norwegian Medicine Agency" />
+  <description value="Possible values for IsConsumerPackage on MedicinalProductPackaged" />
+  <content value="complete" />
+  <concept>
+    <code value="true" />
+    <display value="Consumer package" />
+  </concept>
+  <concept>
+    <code value="false" />
+    <display value="Not consumer package" />
+  </concept>
+</CodeSystem>

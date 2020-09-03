@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="safest-packageLevel.codesystem" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2020-07-28T12:04:27.138+00:00" />
+  </meta>
+  <url value="http://legemiddelverket.no/fhir/CodeSystem/PackageLevel" />
+  <version value="1.0.0" />
+  <name value="safest-packageLevel.codesystem" />
+  <title value="SAFEST Package level codesystem" />
+  <status value="draft" />
+  <date value="2020-07-28T12:04:24.4544936+00:00" />
+  <publisher value="Norwegian Medicine Agency" />
+  <description value="Possible values for Package level on MedicinalProductPackaged" />
+  <content value="complete" />
+  <concept>
+    <code value="1" />
+    <display value="Primary" />
+  </concept>
+  <concept>
+    <code value="2" />
+    <display value="Secondary" />
+  </concept>
+  <concept>
+    <code value="3" />
+    <display value="Tertiary" />
+  </concept>
+  <concept>
+    <code value="4" />
+    <display value="Quaternary" />
+  </concept>
+</CodeSystem>
