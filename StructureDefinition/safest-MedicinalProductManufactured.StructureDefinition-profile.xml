@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="55413776-25c3-4378-8b6b-15cd43a526e9" />
   <meta>
-    <versionId value="14" />
-    <lastUpdated value="2020-09-04T06:47:44.242+00:00" />
+    <versionId value="15" />
+    <lastUpdated value="2020-09-09T15:50:49.699+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductManufactured" />
   <name value="safest-medicinalProductManufactured" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2020-09-04T06:47:30.3522672+00:00" />
+  <date value="2020-09-09T15:50:33.0540851+00:00" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -73,7 +73,6 @@
       <path value="MedicinalProductManufactured.extension" />
       <sliceName value="flavor" />
       <short value="Flavor" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -94,6 +93,10 @@
     <element id="MedicinalProductManufactured.ingredient.reference">
       <path value="MedicinalProductManufactured.ingredient.reference" />
       <short value="Reference to MedicinalProductIngredient" />
+      <type>
+        <code value="string" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductIngredient" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>

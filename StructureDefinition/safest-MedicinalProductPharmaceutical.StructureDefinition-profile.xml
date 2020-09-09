@@ -2,13 +2,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="05aceafe-7f33-4348-9b22-6f1391a56b85" />
   <meta>
-    <versionId value="8" />
-    <lastUpdated value="2020-07-28T13:25:26.73+00:00" />
+    <versionId value="9" />
+    <lastUpdated value="2020-09-09T15:53:56.208+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPharmaceutical" />
   <name value="safest-MedicinalProductPharmaceutical" />
   <status value="draft" />
-  <date value="2020-07-28T13:25:25.7992975Z" />
+  <date value="2020-09-09T15:53:39.6348989+00:00" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -40,41 +40,22 @@
         <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-subject" />
       </type>
     </element>
-    <element id="MedicinalProductPharmaceutical.extension:subject.value[x].identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.extension.value[x].identifier.type.coding.display" />
+    <element id="MedicinalProductPharmaceutical.extension:subject.value[x].reference">
+      <path value="MedicinalProductPharmaceutical.extension.value[x].reference" />
+      <type>
+        <code value="string" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProduct" />
+      </type>
     </element>
-    <element id="MedicinalProductPharmaceutical.extension:subject.value[x].identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.extension.value[x].identifier.type.text" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.extension:subject.value[x].identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.extension.value[x].identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.extension:subject.value[x].identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.extension.value[x].identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.extension:subject.value[x].identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.extension.value[x].identifier.assigner.display" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.extension:subject.value[x].display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.extension.value[x].display" />
+    <element id="MedicinalProductPharmaceutical.extension:subject.value[x].reference.productClassification.coding">
+      <path value="MedicinalProductPharmaceutical.extension.value[x].reference.productClassification.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="MedicinalProductPharmaceutical.extension:property">
       <path value="MedicinalProductPharmaceutical.extension" />
@@ -83,6 +64,16 @@
         <code value="Extension" />
         <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-Property" />
       </type>
+    </element>
+    <element id="MedicinalProductPharmaceutical.extension:property.extension">
+      <path value="MedicinalProductPharmaceutical.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="MedicinalProductPharmaceutical.extension:property.extension:type">
       <path value="MedicinalProductPharmaceutical.extension.extension" />
@@ -93,19 +84,6 @@
     <element id="MedicinalProductPharmaceutical.extension:property.extension:type.value[x]">
       <path value="MedicinalProductPharmaceutical.extension.extension.value[x]" />
       <definition value="Define the type of property by using a codesystem. &#xD;&#xA;&#xD;&#xA;Possible code systems include: &#xD;&#xA;http://legemiddelverket.no/fhir/CodeSystem/NutritionProperties" />
-      <min value="1" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.extension:property.extension:type.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.extension.extension.value[x].coding.display" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.extension:property.extension:type.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.extension.extension.value[x].text" />
     </element>
     <element id="MedicinalProductPharmaceutical.extension:property.extension:value">
       <path value="MedicinalProductPharmaceutical.extension.extension" />
@@ -126,42 +104,6 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicinalProductPharmaceutical.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.identifier.assigner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.identifier.assigner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.identifier.assigner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.identifier.assigner.identifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.identifier.assigner.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.identifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.identifier.assigner.identifier.assigner.display" />
-    </element>
     <element id="MedicinalProductPharmaceutical.identifier:safestIdentifier">
       <path value="MedicinalProductPharmaceutical.identifier" />
       <sliceName value="safestIdentifier" />
@@ -172,42 +114,6 @@
     <element id="MedicinalProductPharmaceutical.identifier:safestIdentifier.system">
       <path value="MedicinalProductPharmaceutical.identifier.system" />
       <fixedUri value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProductPharmaceutical" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.identifier:safestIdentifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.identifier:safestIdentifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.identifier:safestIdentifier.assigner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.identifier:safestIdentifier.assigner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.identifier.assigner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.identifier:safestIdentifier.assigner.identifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.identifier.assigner.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.identifier:safestIdentifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.identifier.assigner.identifier.assigner.display" />
     </element>
     <element id="MedicinalProductPharmaceutical.identifier:legemiddelmerkevare_ID">
       <path value="MedicinalProductPharmaceutical.identifier" />
@@ -220,113 +126,12 @@
       <path value="MedicinalProductPharmaceutical.identifier.system" />
       <fixedUri value="http://ehelse.no/fhir/CodeSystem/FEST" />
     </element>
-    <element id="MedicinalProductPharmaceutical.identifier:legemiddelmerkevare_ID.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.identifier:legemiddelmerkevare_ID.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.identifier:legemiddelmerkevare_ID.assigner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.identifier:legemiddelmerkevare_ID.assigner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.identifier.assigner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.identifier:legemiddelmerkevare_ID.assigner.identifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.identifier.assigner.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.identifier:legemiddelmerkevare_ID.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.ingredient.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.ingredient.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.ingredient.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.ingredient.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.ingredient.identifier.assigner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.ingredient.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.ingredient.identifier.assigner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.ingredient.identifier.assigner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.ingredient.identifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.ingredient.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.ingredient.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.ingredient.identifier.assigner.display" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.device.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.device.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.device.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.device.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.device.identifier.assigner.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.device.identifier.assigner.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.device.identifier.assigner.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.device.identifier.assigner.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.device.identifier.assigner.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.device.identifier.assigner.identifier.assigner.display" />
-    </element>
-    <element id="MedicinalProductPharmaceutical.device.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicinalProductPharmaceutical.device.identifier.assigner.display" />
+    <element id="MedicinalProductPharmaceutical.ingredient.reference">
+      <path value="MedicinalProductPharmaceutical.ingredient.reference" />
+      <type>
+        <code value="string" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductIngredient" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>

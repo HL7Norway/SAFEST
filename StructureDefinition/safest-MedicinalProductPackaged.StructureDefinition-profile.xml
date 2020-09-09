@@ -2,15 +2,15 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="0c2997cd-c746-4392-9c01-f2baeb11b3c6" />
   <meta>
-    <versionId value="25" />
-    <lastUpdated value="2020-09-04T06:41:04.971+00:00" />
+    <versionId value="26" />
+    <lastUpdated value="2020-09-09T15:57:01.112+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPackaged" />
   <version value="0.0.1" />
   <name value="safest-MedicinalProductPackaged" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2020-09-04T06:40:51.0595201+00:00" />
+  <date value="2020-09-09T15:56:44.3130995+00:00" />
   <description value="A medicinal product in a container or package as defined by SAFEST." />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -41,7 +41,6 @@
     <element id="MedicinalProductPackaged.extension:repackagingManufacturer">
       <path value="MedicinalProductPackaged.extension" />
       <sliceName value="repackagingManufacturer" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -95,6 +94,23 @@
       <path value="MedicinalProductPackaged.identifier.system" />
       <fixedUri value="TBA" />
     </element>
+    <element id="MedicinalProductPackaged.subject.reference">
+      <path value="MedicinalProductPackaged.subject.reference" />
+      <type>
+        <code value="string" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProduct" />
+      </type>
+    </element>
+    <element id="MedicinalProductPackaged.subject.reference.productClassification.coding">
+      <path value="MedicinalProductPackaged.subject.reference.productClassification.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="MedicinalProductPackaged.legalStatusOfSupply">
       <path value="MedicinalProductPackaged.legalStatusOfSupply" />
       <definition value="The legal status of supply of the medicinal product as classified by the regulator.&#xD;&#xA;&#xD;&#xA;Hvilken reseptgruppe paknigen tilhører" />
@@ -133,6 +149,28 @@
       <type>
         <code value="Extension" />
         <profile value="http://legemiddelverket.no/fhir/StructureDefinition/containedItem" />
+      </type>
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.extension:containedItem.extension">
+      <path value="MedicinalProductPackaged.packageItem.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.extension:containedItem.extension:item">
+      <path value="MedicinalProductPackaged.packageItem.extension.extension" />
+      <sliceName value="item" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.extension:containedItem.extension:item.value[x].reference">
+      <path value="MedicinalProductPackaged.packageItem.extension.extension.value[x].reference" />
+      <type>
+        <code value="string" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductManufactured" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-DeviceDefinition" />
       </type>
     </element>
     <element id="MedicinalProductPackaged.packageItem.identifier">
