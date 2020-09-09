@@ -2,33 +2,57 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="safest-nutrition-properties.codesystem" />
   <meta>
-    <versionId value="2" />
-    <lastUpdated value="2020-07-28T12:04:27.138+00:00" />
+    <versionId value="8" />
+    <lastUpdated value="2020-09-08T15:58:25.947+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/CodeSystem/NutritionProperties" />
   <version value="1.0.0" />
   <name value="safest-nutrition-properties.codesystem" />
   <title value="SAFEST Nutrition properties codesystem" />
   <status value="draft" />
-  <date value="2020-07-28T12:04:24.4544936+00:00" />
+  <date value="2020-09-08T15:58:09.3559979+00:00" />
   <publisher value="Norwegian Medicine Agency" />
   <description value="Possible nutrition properties that may be on a nutritional pharmaceutical product" />
   <content value="complete" />
   <concept>
     <code value="AminoAcidContent" />
-    <display value="Amino Acid Content" />
+    <display value="Total amount of Amino Acid" />
+    <designation>
+      <language value="no" />
+      <value value="Total mengde aminosyrer" />
+    </designation>
   </concept>
   <concept>
     <code value="NitrogenContent" />
-    <display value="Nitrogen Content" />
+    <display value="Total amount of Nitrogen" />
+    <designation>
+      <language value="no" />
+      <value value="Nitrogeninnhold" />
+    </designation>
   </concept>
   <concept>
     <code value="SourcesOfFat" />
-    <display value="Sources Of Fat" />
+    <display value="Sources of fat" />
+    <designation>
+      <language value="no" />
+      <value value="Fettkilder" />
+    </designation>
   </concept>
   <concept>
     <code value="FatContent" />
-    <display value="Fat Content" />
+    <display value="Total amount of fat" />
+    <designation>
+      <language value="no" />
+      <value value="Total mengde fett" />
+    </designation>
+  </concept>
+  <concept>
+    <code value="FiberContent" />
+    <display value="Total amount of fiber" />
+    <designation>
+      <language value="no" />
+      <value value="Total mengde fiber" />
+    </designation>
   </concept>
   <concept>
     <code value="CarbohydateContent" />
