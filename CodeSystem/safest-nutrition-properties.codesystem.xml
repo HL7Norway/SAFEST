@@ -57,22 +57,50 @@
   <concept>
     <code value="CarbohydateContent" />
     <display value="Carbohydate Content" />
+    <designation>
+      <language value="no" />
+      <value value="Total mengde karbohydrater" />
+    </designation>
   </concept>
   <concept>
-    <code value="EnergyContent" />
+    <code value="EnergyContentKj" />
     <display value="Energy Content" />
+    <designation>
+      <language value="no" />
+      <value value="Energiinnhold i Kj" />
+    </designation>
+  </concept>
+  <concept>
+    <code value="EnergyContentKcal" />
+    <display value="Energy Content" />
+    <designation>
+      <language value="no" />
+      <value value="Energiinnhold i Kcal" />
+    </designation>
   </concept>
   <concept>
     <code value="WaterContent" />
     <display value="Water Content" />
+    <designation>
+      <language value="no" />
+      <value value="Vanninnhold" />
+    </designation>
   </concept>
   <concept>
     <code value="SourcesOfProtein" />
     <display value="Sources Of Protein" />
+    <designation>
+      <language value="no" />
+      <value value="Proteinkilder" />
+    </designation>
   </concept>
   <concept>
     <code value="ProteinContent" />
     <display value="Protein Content" />
+    <designation>
+      <language value="no" />
+      <value value="Total mengde protein" />
+    </designation>
   </concept>
   <concept>
     <code value="FlavorNutrition" />
@@ -81,17 +109,33 @@
   <concept>
     <code value="NutritionalForm" />
     <display value="Nutritional Form" />
+    <designation>
+      <language value="no" />
+      <value value="Næringsmiddelform" />
+    </designation>
   </concept>
   <concept>
     <code value="Osmolarity" />
     <display value="Osmolarity" />
+    <designation>
+      <language value="no" />
+      <value value="Osmolaritet" />
+    </designation>
   </concept>
   <concept>
     <code value="Osmolality" />
     <display value="Osmolality" />
+    <designation>
+      <language value="no" />
+      <value value="Osmolalitet" />
+    </designation>
   </concept>
   <concept>
     <code value="pH" />
     <display value="pH" />
+    <designation>
+      <language value="no" />
+      <value value="pH-verdi" />
+    </designation>
   </concept>
 </CodeSystem>

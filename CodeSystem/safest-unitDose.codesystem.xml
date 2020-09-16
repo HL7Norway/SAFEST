@@ -17,9 +17,17 @@
   <concept>
     <code value="true" />
     <display value="Is unit dose" />
+    <designation>
+      <language value="no" />
+      <value value="Er endose" />
+    </designation>
   </concept>
   <concept>
     <code value="false" />
     <display value="Not unit dose" />
+    <designation>
+      <language value="no" />
+      <value value="Er ikke endose" />
+    </designation>
   </concept>
 </CodeSystem>

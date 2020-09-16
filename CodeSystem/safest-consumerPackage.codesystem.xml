@@ -17,9 +17,17 @@
   <concept>
     <code value="true" />
     <display value="Consumer package" />
+    <designation>
+      <language value="no" />
+      <value value="Er forbrukerpakning" />
+    </designation>
   </concept>
   <concept>
     <code value="false" />
     <display value="Not consumer package" />
+    <designation>
+      <language value="no" />
+      <value value="Er ikke forbrukerpakning" />
+    </designation>
   </concept>
 </CodeSystem>

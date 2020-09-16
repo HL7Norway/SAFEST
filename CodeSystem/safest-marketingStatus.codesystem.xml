@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="safest-MarketingStatus.codesystem" />
+    <meta>
+        <versionId value="2" />
+        <lastUpdated value="2020-07-28T12:04:27.138+00:00" />
+    </meta>
+    <url value="http://legemiddelverket.no/fhir/CodeSystem/MarketingStatus" />
+    <version value="1.0.0" />
+    <name value="safest-MarketingStatus.codesystem" />
+    <title value="SAFEST marketing status codesystem" />
+    <status value="draft" />
+    <date value="2020-07-28T12:04:24.4544936+00:00" />
+    <publisher value="Norwegian Medicine Agency" />
+    <description value="Possible values for marketing status on MedicinalProductPackaged" />
+    <content value="complete" />
+    <concept>
+        <code value="0" />
+        <display value=" " />
+        <designation>
+            <language value="no" />
+            <value value="Ikke Markedsført" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="1" />
+        <display value=" " />
+        <designation>
+            <language value="no" />
+            <value value="Kan prisbehandles" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="2" />
+        <display value=" " />
+        <designation>
+            <language value="no" />
+            <value value="Kontrollert VRS" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="3" />
+        <display value=" " />
+        <designation>
+            <language value="no" />
+            <value value="Godkjent VRS" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="5" />
+        <display value=" " />
+        <designation>
+            <language value="no" />
+            <value value="Markedsført" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="6" />
+        <display value=" " />
+        <designation>
+            <language value="no" />
+            <value value="Midlertidig utgått" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="7" />
+        <display value=" " />
+        <designation>
+            <language value="no" />
+            <value value="Avregistrert" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="9" />
+        <display value=" " />
+        <designation>
+            <language value="no" />
+            <value value="Utgått" />
+        </designation>
+    </concept>
+    <concept>
+        <code value="10" />
+        <display value="" />
+        <designation>
+            <language value="no" />
+            <value value="Utgått, aldri markedsført" />
+        </designation>
+    </concept>
+</CodeSystem>
