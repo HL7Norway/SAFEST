@@ -16,7 +16,7 @@
     <content value="complete" />
     <concept>
         <code value="0" />
-        <display value=" " />
+        <display value="Not marketed" />
         <designation>
             <language value="no" />
             <value value="Ikke Markedsført" />
@@ -48,7 +48,7 @@
     </concept>
     <concept>
         <code value="5" />
-        <display value=" " />
+        <display value="Marketed" />
         <designation>
             <language value="no" />
             <value value="Markedsført" />
@@ -56,7 +56,7 @@
     </concept>
     <concept>
         <code value="6" />
-        <display value=" " />
+        <display value="Temporarily unavailable" />
         <designation>
             <language value="no" />
             <value value="Midlertidig utgått" />

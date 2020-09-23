@@ -2,13 +2,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="9d46eff2-79b6-423b-be92-5441cf0b8022" />
   <meta>
-    <versionId value="5" />
-    <lastUpdated value="2020-07-28T13:24:19.085+00:00" />
+    <versionId value="6" />
+    <lastUpdated value="2020-09-23T05:41:01.063+00:00" />
   </meta>
-  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-Property" />
-  <name value="safest-Property" />
+  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-property" />
+  <name value="safest-property" />
   <status value="draft" />
-  <date value="2020-07-28T13:24:18.1808072Z" />
+  <date value="2020-09-23T05:40:31.326035+00:00" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -91,7 +91,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://legemiddelverket.no/fhir/StructureDefinition/safest-Property" />
+      <fixedUri value="http://legemiddelverket.no/fhir/StructureDefinition/safest-property" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
