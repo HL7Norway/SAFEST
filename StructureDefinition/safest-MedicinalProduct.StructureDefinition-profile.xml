@@ -45,7 +45,7 @@
       <path value="MedicinalProduct.extension" />
       <sliceName value="authorizedPharmaceuticalDoseForm" />
       <short value="Authorized Pharmaceutical Dose From" />
-      <definition value="The authorized Pharmaceutical dose form" />
+      <definition value="The authorized Pharmaceutical dose form&#xD;&#xA;This may be one of the following types:&#xD;&#xA;- Pharmaceutical dose form term&#xD;&#xA;- Combined pharmaceutical dose form term&#xD;&#xA;- Combined term &#xD;&#xA;- Combination package term" />
       <type>
         <code value="Extension" />
         <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-authorizedPharmaceuticalDoseForm" />
