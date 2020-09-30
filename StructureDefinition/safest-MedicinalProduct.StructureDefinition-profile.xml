@@ -2,15 +2,15 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="a6da3c25-c4e4-404c-ba8b-b85792267318" />
   <meta>
-    <versionId value="14" />
-    <lastUpdated value="2020-09-16T09:48:40.031+00:00" />
+    <versionId value="15" />
+    <lastUpdated value="2020-09-29T09:51:39.427+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProduct" />
   <name value="safest-MedicinalProduct" />
   <title value="safest-medicinalproduct" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2020-09-16T09:46:05.7910038Z" />
+  <date value="2020-09-29T09:51:05.8496394+00:00" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
