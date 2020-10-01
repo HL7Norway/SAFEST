@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="55413776-25c3-4378-8b6b-15cd43a526e9" />
   <meta>
-    <versionId value="17" />
-    <lastUpdated value="2020-09-29T05:40:53.306+00:00" />
+    <versionId value="19" />
+    <lastUpdated value="2020-10-01T06:05:35.128+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductManufactured" />
   <name value="safest-medicinalProductManufactured" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2020-09-23T06:02:50.2032176Z" />
+  <date value="2020-10-01T06:00:25.2535448Z" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -36,6 +36,7 @@
       <path value="MedicinalProductManufactured.extension" />
       <sliceName value="legemiddeldoseID" />
       <short value="Legemiddeldose id from FEST" />
+      <definition value="Used to find applicable item in the KatLegemiddeldose in FEST." />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -44,7 +45,7 @@
     </element>
     <element id="MedicinalProductManufactured.extension:legemiddeldoseID.value[x].system">
       <path value="MedicinalProductManufactured.extension.value[x].system" />
-      <fixedUri value="http://ehelse.no/fhir/CodeSystem/FEST" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/FEST/KatLegemiddeldose" />
     </element>
     <element id="MedicinalProductManufactured.extension:safestIdentifier">
       <path value="MedicinalProductManufactured.extension" />
@@ -68,6 +69,26 @@
         <code value="Extension" />
         <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-lmrNumber" />
       </type>
+    </element>
+    <element id="MedicinalProductManufactured.extension:legemiddelmerkevareId">
+      <path value="MedicinalProductManufactured.extension" />
+      <sliceName value="legemiddelmerkevareId" />
+      <short value="Legemiddelmerkevare id from FEST" />
+      <definition value="Used to find applicable item in the KatLegemiddelMerkevare in FEST." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-legemiddelMerkevareId" />
+      </type>
+    </element>
+    <element id="MedicinalProductManufactured.extension:legemiddelmerkevareId.value[x]">
+      <path value="MedicinalProductManufactured.extension.value[x]" />
+      <min value="1" />
+    </element>
+    <element id="MedicinalProductManufactured.extension:legemiddelmerkevareId.value[x].system">
+      <path value="MedicinalProductManufactured.extension.value[x].system" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/FEST/KatLegemiddelMerkevare" />
     </element>
     <element id="MedicinalProductManufactured.ingredient">
       <path value="MedicinalProductManufactured.ingredient" />

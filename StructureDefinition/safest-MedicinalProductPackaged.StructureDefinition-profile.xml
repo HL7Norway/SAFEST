@@ -68,7 +68,7 @@
     <element id="MedicinalProductPackaged.identifier:legemiddelPakningID.system">
       <path value="MedicinalProductPackaged.identifier.system" />
       <short value="Identification of LegemiddelPakning" />
-      <fixedUri value="http://ehelse.no/fhir/CodeSystem/FEST" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/FEST/KatLegemiddelPakning" />
     </element>
     <element id="MedicinalProductPackaged.identifier:safestIdentifier">
       <path value="MedicinalProductPackaged.identifier" />
