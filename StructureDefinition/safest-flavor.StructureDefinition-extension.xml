@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="033dcae8-c2f5-4405-bfe0-9c52acf3da7e" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2020-09-04T06:46:54.869+00:00" />
+  </meta>
+  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-flavor" />
+  <name value="safest-flavor" />
+  <status value="draft" />
+  <date value="2020-09-04T06:46:40.7238105+00:00" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MedicinalProductManufactured" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://legemiddelverket.no/fhir/StructureDefinition/safest-flavor" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

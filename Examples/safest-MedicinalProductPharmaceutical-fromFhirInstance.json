@@ -1,0 +1,125 @@
+{
+  "resourceType": "MedicinalProductPharmaceutical",
+  "id": "39493ab2-c653-468d-920c-83ec200a4c6e",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-08-19T11:08:08.874+00:00",
+    "profile": [
+      "http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPharmaceutical"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://legemiddelverket.no/fhir/StructureDefinition/safest-subject",
+      "valueReference": {
+        "reference": "https://slvfhirapi-at.azurehealthcareapis.com/MedicinalProduct/f0a130ca-53c8-48ae-a456-6d81313739f1"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://legemiddelverket.no/fhir/CodeSystem/NutritionProperties",
+                "code": "EnergyContent"
+              }
+            ],
+            "text": "Energy Content"
+          }
+        },
+        {
+          "url": "value",
+          "valueQuantity": {
+            "value": 5.0,
+            "unit": "someunit",
+            "system": "someunitsystem",
+            "code": "someunit"
+          }
+        }
+      ],
+      "url": "http://legemiddelverket.no/fhir/StructureDefinition/safest-Property"
+    },
+    {
+      "extension": [
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://legemiddelverket.no/fhir/CodeSystem/NutritionProperties",
+                "code": "CarbohydateContent"
+              }
+            ],
+            "text": "Carbohydate Content"
+          }
+        },
+        {
+          "url": "value",
+          "valueQuantity": {
+            "value": 5.0,
+            "unit": "someunit",
+            "system": "someunitsystem",
+            "code": "someunit"
+          }
+        }
+      ],
+      "url": "http://legemiddelverket.no/fhir/StructureDefinition/safest-Property"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://legemiddelverket.no/fhir/SAFEST/MedicinalProductPharmaceutical",
+      "value": "1a499dd0-7e18-45c0-85a9-04023ad2f39f"
+    },
+    {
+      "system": "http://ehelse.no/fhir/CodeSystem/FEST",
+      "value": "46a856ce-fccf-4208-8ac9-3e15315960cb"
+    }
+  ],
+  "administrableDoseForm": {
+    "coding": [
+      {
+        "system": "systemforAdministrableDoseForm",
+        "code": "doseformcode"
+      }
+    ],
+    "text": "administrable dose form"
+  },
+  "unitOfPresentation": {
+    "coding": [
+      {
+        "system": "systemforunitofpresetntation",
+        "code": "unitCode"
+      }
+    ],
+    "text": "unit of presentation"
+  },
+  "characteristics": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "systemForAllergen",
+            "code": "Somecode"
+          }
+        ],
+        "text": "this is an allergen"
+      }
+    }
+  ],
+  "routeOfAdministration": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "somesystem",
+            "code": "someCode"
+          }
+        ],
+        "text": "sometext"
+      }
+    }
+  ]
+}

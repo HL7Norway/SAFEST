@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="a6da3c25-c4e4-404c-ba8b-b85792267318" />
+  <meta>
+    <versionId value="15" />
+    <lastUpdated value="2020-09-29T09:51:39.427+00:00" />
+  </meta>
+  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProduct" />
+  <name value="safest-MedicinalProduct" />
+  <title value="safest-medicinalproduct" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2020-09-29T09:51:05.8496394+00:00" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MedicinalProduct" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicinalProduct" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="MedicinalProduct.extension">
+      <path value="MedicinalProduct.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicinalProduct.extension:characteristics">
+      <path value="MedicinalProduct.extension" />
+      <sliceName value="characteristics" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-characteristics" />
+      </type>
+    </element>
+    <element id="MedicinalProduct.extension:authorizedPharmaceuticalDoseForm">
+      <path value="MedicinalProduct.extension" />
+      <sliceName value="authorizedPharmaceuticalDoseForm" />
+      <short value="Authorized Pharmaceutical Dose From" />
+      <definition value="The authorized Pharmaceutical dose form&#xD;&#xA;This may be one of the following types:&#xD;&#xA;- Pharmaceutical dose form term&#xD;&#xA;- Combined pharmaceutical dose form term&#xD;&#xA;- Combined term &#xD;&#xA;- Combination package term" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-authorizedPharmaceuticalDoseForm" />
+      </type>
+    </element>
+    <element id="MedicinalProduct.identifier">
+      <path value="MedicinalProduct.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <short value="Identifier as provided by SAFEST" />
+      <max value="1" />
+    </element>
+    <element id="MedicinalProduct.identifier:safestIdentifier">
+      <path value="MedicinalProduct.identifier" />
+      <sliceName value="safestIdentifier" />
+      <short value="Identifier as provided by SAFEST" />
+      <definition value="Identifier as provided by SAFEST" />
+      <max value="1" />
+    </element>
+    <element id="MedicinalProduct.identifier:safestIdentifier.system">
+      <path value="MedicinalProduct.identifier.system" />
+      <fixedUri value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProduct" />
+    </element>
+    <element id="MedicinalProduct.combinedPharmaceuticalDoseForm">
+      <path value="MedicinalProduct.combinedPharmaceuticalDoseForm" />
+      <max value="0" />
+    </element>
+    <element id="MedicinalProduct.combinedPharmaceuticalDoseForm.coding.system">
+      <path value="MedicinalProduct.combinedPharmaceuticalDoseForm.coding.system" />
+      <short value="TBA" />
+      <definition value="TBA" />
+    </element>
+    <element id="MedicinalProduct.legalStatusOfSupply.coding.system">
+      <path value="MedicinalProduct.legalStatusOfSupply.coding.system" />
+      <definition value="Legal status of supply (prescription group) as presented from Volven" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7421" />
+    </element>
+    <element id="MedicinalProduct.productClassification.coding">
+      <path value="MedicinalProduct.productClassification.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicinalProduct.productClassification.coding:ATC">
+      <path value="MedicinalProduct.productClassification.coding" />
+      <sliceName value="ATC" />
+    </element>
+    <element id="MedicinalProduct.productClassification.coding:ATC.system">
+      <path value="MedicinalProduct.productClassification.coding.system" />
+      <fixedUri value="http://www.whocc.no/atc" />
+    </element>
+    <element id="MedicinalProduct.pharmaceuticalProduct">
+      <path value="MedicinalProduct.pharmaceuticalProduct" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical" />
+        <targetProfile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPharmaceutical" />
+      </type>
+    </element>
+    <element id="MedicinalProduct.packagedMedicinalProduct">
+      <path value="MedicinalProduct.packagedMedicinalProduct" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicinalProductPackaged" />
+        <targetProfile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPackaged" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

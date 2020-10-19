@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="safest-nutrition-properties.codesystem" />
+  <meta>
+    <versionId value="8" />
+    <lastUpdated value="2020-09-08T15:58:25.947+00:00" />
+  </meta>
+  <url value="http://legemiddelverket.no/fhir/CodeSystem/NutritionProperties" />
+  <version value="1.0.0" />
+  <name value="safest-nutrition-properties.codesystem" />
+  <title value="SAFEST Nutrition properties codesystem" />
+  <status value="draft" />
+  <date value="2020-09-08T15:58:09.3559979+00:00" />
+  <publisher value="Norwegian Medicine Agency" />
+  <description value="Possible nutrition properties that may be on a nutritional pharmaceutical product" />
+  <content value="complete" />
+  <concept>
+    <code value="AminoAcidContent" />
+    <display value="Total amount of Amino Acid" />
+    <designation>
+      <language value="no" />
+      <value value="Total mengde aminosyrer" />
+    </designation>
+  </concept>
+  <concept>
+    <code value="NitrogenContent" />
+    <display value="Total amount of Nitrogen" />
+    <designation>
+      <language value="no" />
+      <value value="Nitrogeninnhold" />
+    </designation>
+  </concept>
+  <concept>
+    <code value="SourcesOfFat" />
+    <display value="Sources of fat" />
+    <designation>
+      <language value="no" />
+      <value value="Fettkilder" />
+    </designation>
+  </concept>
+  <concept>
+    <code value="FatContent" />
+    <display value="Total amount of fat" />
+    <designation>
+      <language value="no" />
+      <value value="Total mengde fett" />
+    </designation>
+  </concept>
+  <concept>
+    <code value="FiberContent" />
+    <display value="Total amount of fiber" />
+    <designation>
+      <language value="no" />
+      <value value="Total mengde fiber" />
+    </designation>
+  </concept>
+  <concept>
+    <code value="CarbohydateContent" />
+    <display value="Carbohydate Content" />
+    <designation>
+      <language value="no" />
+      <value value="Total mengde karbohydrater" />
+    </designation>
+  </concept>
+  <concept>
+    <code value="EnergyContentKj" />
+    <display value="Energy Content" />
+    <designation>
+      <language value="no" />
+      <value value="Energiinnhold i Kj" />
+    </designation>
+  </concept>
+  <concept>
+    <code value="EnergyContentKcal" />
+    <display value="Energy Content" />
+    <designation>
+      <language value="no" />
+      <value value="Energiinnhold i Kcal" />
+    </designation>
+  </concept>
+  <concept>
+    <code value="WaterContent" />
+    <display value="Water Content" />
+    <designation>
+      <language value="no" />
+      <value value="Vanninnhold" />
+    </designation>
+  </concept>
+  <concept>
+    <code value="SourcesOfProtein" />
+    <display value="Sources Of Protein" />
+    <designation>
+      <language value="no" />
+      <value value="Proteinkilder" />
+    </designation>
+  </concept>
+  <concept>
+    <code value="ProteinContent" />
+    <display value="Protein Content" />
+    <designation>
+      <language value="no" />
+      <value value="Total mengde protein" />
+    </designation>
+  </concept>
+  <concept>
+    <code value="FlavorNutrition" />
+    <display value="Flavor Nutrition" />
+  </concept>
+  <concept>
+    <code value="NutritionalForm" />
+    <display value="Nutritional Form" />
+    <designation>
+      <language value="no" />
+      <value value="Næringsmiddelform" />
+    </designation>
+  </concept>
+  <concept>
+    <code value="Osmolarity" />
+    <display value="Osmolarity" />
+    <designation>
+      <language value="no" />
+      <value value="Osmolaritet" />
+    </designation>
+  </concept>
+  <concept>
+    <code value="Osmolality" />
+    <display value="Osmolality" />
+    <designation>
+      <language value="no" />
+      <value value="Osmolalitet" />
+    </designation>
+  </concept>
+  <concept>
+    <code value="pH" />
+    <display value="pH" />
+    <designation>
+      <language value="no" />
+      <value value="pH-verdi" />
+    </designation>
+  </concept>
+</CodeSystem>

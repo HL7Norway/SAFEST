@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="51347b0f-6bf5-42a9-aa58-1a0f152acc22" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2020-10-01T08:22:42.53+00:00" />
+  </meta>
+  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-maHolderOrManufacturer" />
+  <name value="safest-maHolderOrManufacturer" />
+  <status value="draft" />
+  <date value="2020-10-01T08:22:06.402959+00:00" />
+  <description value="Extension for displaying the name of the MA holder or, if the product does not have a norwegian Marketing Authorisation, the name of the manufacturer" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MedicinalProductPackaged" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://legemiddelverket.no/fhir/StructureDefinition/safest-maHolderOrManufacturer" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

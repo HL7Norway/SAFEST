@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="635f8197-06b4-4b84-9ee8-d3e8fefc12a4" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2020-09-04T06:39:44.002+00:00" />
+  </meta>
+  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-repackagingManufacturer" />
+  <name value="safest-repackagingManufacturer" />
+  <status value="draft" />
+  <date value="2020-09-04T06:39:29.8022191+00:00" />
+  <description value="Repackaging manufacturer for a Medicinal Product Pacakge" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MedicinalProductPackaged" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://legemiddelverket.no/fhir/StructureDefinition/safest-repackagingManufacturer" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,7 +1,13 @@
 # SAFEST
-Formålet med prosjektet er å etablere en kilde til strukturert legemiddelinformasjon som understøtter behovene i sykehus. Informasjonen skal være elektronisk tilgjengelig gjennom et spørregrensesnitt til bruk i kliniske systemer.
+![SAFEST logo](SAFEST_LOGO.png)
 
-## Bakgrunn
+# Short description English
+The SAFEST project aims to medicinal product information according to IDMP in order to lay the groundwork for a “closed loop medication management”, as well as nutrition and support for prescribing drugs based on substance and not brand.
+
+# Kort beskrivelse Norsk
+Formålet med prosjektet er å etablere en kilde til strukturert legemiddelinformasjon som understøtter behovene i sykehus. Informasjonen skal være elektronisk tilgjengelig gjennom et spørregrensesnitt til bruk i kliniske systemer og baseres på internasjonale standarder som FHIR og IDMP.
+
+# Bakgrunn
 Sykehusene i Norge har per i dag ikke tilgang til én felles kilde til strukturert legemiddelinformasjon til bruk i kliniske systemer. Innføringen av elektronisk kurve, elektronisk pasientjournal og Kjernejournal er kommet langt. Legemiddelverket leverer i dag kvalitetssikret strukturert legemiddelinformasjon til bruk i e-resept (FEST). Alle som skal forskrive en e-resept må bruke FEST som grunnlagskilde. Her ligger også en del beslutningsstøtte, som for eksempel interaksjoner og varsler om legemiddelmangel.
  
 Sykehusene har flere behov og ønsker til strukturert legemiddelinformasjon enn det FEST for e-resept inneholder. Dette løses delvis i dag ved å komplettere og kompensere for dette regionalt, noe som er ressurskrevende.
@@ -22,8 +28,7 @@ Prosjektet jobber langs flere akser i samarbeid med mange aktører, blant annet 
 - Implementasjonsguider med metafiler
 
 ## Publisering
-Ferdige profiler publiseres også her: 
-(Fremtidig Simplifier-repo)
+Ferdige profiler publiseres også her: https://simplifier.net/safest
 
 ## Vi benytter Feature branch workflow
 
@@ -57,6 +62,6 @@ http://ehelse.no/fhir/StructureDefinition/safest-Flag-v05 (evt SLV)
 
 ## Kontakt
 
-stine
+stine dot johansen at soprasteria dot com
 
 espen dot stranger dot seland at ehelse dot no

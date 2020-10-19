@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="05aceafe-7f33-4348-9b22-6f1391a56b85" />
+  <meta>
+    <versionId value="10" />
+    <lastUpdated value="2020-09-14T10:26:43.411+00:00" />
+  </meta>
+  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPharmaceutical" />
+  <name value="safest-MedicinalProductPharmaceutical" />
+  <status value="draft" />
+  <date value="2020-09-14T10:26:24.4652549+00:00" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MedicinalProductPharmaceutical" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="MedicinalProductPharmaceutical.extension">
+      <path value="MedicinalProductPharmaceutical.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicinalProductPharmaceutical.extension:subject">
+      <path value="MedicinalProductPharmaceutical.extension" />
+      <sliceName value="subject" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-subject" />
+      </type>
+    </element>
+    <element id="MedicinalProductPharmaceutical.extension:property">
+      <path value="MedicinalProductPharmaceutical.extension" />
+      <sliceName value="property" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-Property" />
+      </type>
+    </element>
+    <element id="MedicinalProductPharmaceutical.identifier">
+      <path value="MedicinalProductPharmaceutical.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicinalProductPharmaceutical.identifier:safestIdentifier">
+      <path value="MedicinalProductPharmaceutical.identifier" />
+      <sliceName value="safestIdentifier" />
+      <short value="Identifier as provided by SAFEST" />
+      <definition value="An identifier for the pharmaceutical medicinal product as defined by SAFEST." />
+      <max value="1" />
+    </element>
+    <element id="MedicinalProductPharmaceutical.identifier:safestIdentifier.system">
+      <path value="MedicinalProductPharmaceutical.identifier.system" />
+      <fixedUri value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProductPharmaceutical" />
+    </element>
+    <element id="MedicinalProductPharmaceutical.identifier:legemiddelmerkevare_ID">
+      <path value="MedicinalProductPharmaceutical.identifier" />
+      <sliceName value="legemiddelmerkevare_ID" />
+      <short value="Legemiddelmerkevare ID as it appears in FEST" />
+      <definition value="The ID as presented in the FEST catalog Legemiddelmerkevare used for mapping resources between SAFEST and FEST" />
+      <max value="1" />
+    </element>
+    <element id="MedicinalProductPharmaceutical.identifier:legemiddelmerkevare_ID.system">
+      <path value="MedicinalProductPharmaceutical.identifier.system" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/FEST" />
+    </element>
+  </differential>
+</StructureDefinition>

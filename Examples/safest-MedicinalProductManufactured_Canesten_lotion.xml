@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MedicinalProductManufactured xmlns="http://hl7.org/fhir">
+  <id value="exampleCanestenLotion" />
+  <meta>
+    <versionId value="10" />
+    <lastUpdated value="2020-03-26T06:16:24.633+00:00" />
+    <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductManufactured" />
+  </meta>
+  <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-flavor">
+    <valueString value="65341" />
+  </extension>
+  <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-energyContent">
+    <valueQuantity>
+      <value value="1813" />
+      <unit value="kJ/kcal" />
+    </valueQuantity>
+  </extension>
+  <extension url="http://legemiddelverket.no/fhir/StructureDefinition/safest-legemiddeldoseId">
+    <valueIdentifier>
+      <use value="usual" />
+      <system value="http://ehelse.no/fhir/CodeSystem/FEST" />
+      <value value="5341" />
+    </valueIdentifier>
+  </extension>
+  <manufacturedDoseForm>
+    <coding>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.7448" />
+      <code value="Krem" />
+      <display value="34" />
+    </coding>
+  </manufacturedDoseForm>
+  <quantity>
+    <value value="20" />
+    <unit value="g" />
+  </quantity>
+  <ingredient>
+    <reference value="MedicinalProductIngredient/3547" />
+  </ingredient>
+</MedicinalProductManufactured>

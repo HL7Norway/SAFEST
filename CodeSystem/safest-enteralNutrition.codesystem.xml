@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="safest-enteralNutrition.codesystem" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2020-07-28T12:04:27.138+00:00" />
+  </meta>
+  <url value="http://legemiddelverket.no/fhir/CodeSystem/EnteralNutrition" />
+  <version value="1.0.0" />
+  <name value="safest-enteralNutrition.codesystem" />
+  <title value="SAFEST enteral nutrition codesystem" />
+  <status value="draft" />
+  <date value="2020-07-28T12:04:24.4544936+00:00" />
+  <publisher value="Norwegian Medicine Agency" />
+  <description value="Possible values for Enteral nutrition on characteristics of MedicinalProduct" />
+  <content value="complete" />
+  <concept>
+    <code value="true" />
+    <display value="Is enteral nutrition" />
+    <designation>
+      <language value="no" />
+      <value value="Er enteral ernæring" />
+    </designation>
+  </concept>
+  <concept>
+    <code value="false" />
+    <display value="Is not enteral nutrition" />
+    <designation>
+      <language value="no" />
+      <value value="Er ikke enteral ernæring" />
+    </designation>
+  </concept>
+</CodeSystem>

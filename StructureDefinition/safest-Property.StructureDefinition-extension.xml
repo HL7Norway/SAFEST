@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="9d46eff2-79b6-423b-be92-5441cf0b8022" />
+  <meta>
+    <versionId value="6" />
+    <lastUpdated value="2020-09-23T05:41:01.063+00:00" />
+  </meta>
+  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-property" />
+  <name value="safest-property" />
+  <status value="draft" />
+  <date value="2020-09-23T05:40:31.326035+00:00" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MedicinalProductPharmaceutical" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:type">
+      <path value="Extension.extension" />
+      <sliceName value="type" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:type.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="type" />
+    </element>
+    <element id="Extension.extension:type.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <short value="Type of property" />
+      <min value="1" />
+      <type>
+        <code value="Coding" />
+      </type>
+    </element>
+    <element id="Extension.extension:value">
+      <path value="Extension.extension" />
+      <sliceName value="value" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:value.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="value" />
+    </element>
+    <element id="Extension.extension:value.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+      <type>
+        <code value="decimal" />
+      </type>
+      <type>
+        <code value="integer" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="Quantity" />
+      </type>
+      <type>
+        <code value="Range" />
+      </type>
+      <type>
+        <code value="Ratio" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://legemiddelverket.no/fhir/StructureDefinition/safest-property" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
