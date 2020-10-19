@@ -2,13 +2,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="f90e94f1-2423-45b3-ab8b-dc96556e6b52" />
   <meta>
-    <versionId value="2" />
-    <lastUpdated value="2020-03-09T11:45:20.664+00:00" />
+    <versionId value="3" />
+    <lastUpdated value="2020-10-01T08:27:13.67+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-legemiddeldoseId" />
   <name value="safest-legemiddeldoseId" />
   <status value="draft" />
-  <date value="2020-03-09T11:45:17.7106737Z" />
+  <date value="2020-10-01T08:26:37.5138095+00:00" />
   <description value="Legemiddeldose_ID as in FEST" />
   <fhirVersion value="4.0.0" />
   <mapping>
