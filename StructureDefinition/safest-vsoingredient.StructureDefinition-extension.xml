@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="a4c5953d-6921-4c39-b760-8a98a8bd8dc3" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2020-10-29T09:37:18.371+00:00" />
+  </meta>
+  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-vsoingredient" />
+  <name value="safest-vsoingredient" />
+  <status value="draft" />
+  <date value="2020-10-29T09:36:39.2607686Z" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="CodeSystem.concept" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Ingredient extension for VOS" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:substance">
+      <path value="Extension.extension" />
+      <sliceName value="substance" />
+      <short value="The ingredient substance" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:substance.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="substance" />
+    </element>
+    <element id="Extension.extension:substance.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:strength">
+      <path value="Extension.extension" />
+      <sliceName value="strength" />
+      <short value="Strength" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:strength.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="strength" />
+    </element>
+    <element id="Extension.extension:strength.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="Ratio" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://legemiddelverket.no/fhir/StructureDefinition/safest-vsoingredient" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

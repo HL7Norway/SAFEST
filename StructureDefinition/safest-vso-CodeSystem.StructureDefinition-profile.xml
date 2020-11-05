@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="133a49fc-02fd-4ae0-872a-eada0812559d" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2020-10-29T09:38:29.52+00:00" />
+  </meta>
+  <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-vso-CodeSystem" />
+  <name value="safest-vso-CodeSystem" />
+  <status value="draft" />
+  <date value="2020-10-29T09:38:22.8617315+00:00" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="objimpl" />
+    <uri value="http://hl7.org/fhir/object-implementation" />
+    <name value="Object Implementation Information" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="CodeSystem" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CodeSystem" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="CodeSystem.copyright">
+      <path value="CodeSystem.copyright" />
+      <comment value="Systems are not required to have markdown support, so the text should be readable without markdown processing. The markdown syntax is GFM - see https://github.github.com/gfm/&#xD;&#xA; Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required.&#xD;&#xA; Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required.&#xD;&#xA; Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required." />
+    </element>
+    <element id="CodeSystem.concept.extension">
+      <path value="CodeSystem.concept.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="CodeSystem.concept.extension:ingredient">
+      <path value="CodeSystem.concept.extension" />
+      <sliceName value="ingredient" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-vsoingredient" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
