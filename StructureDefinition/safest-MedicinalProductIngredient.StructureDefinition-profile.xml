@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="00518ad3-d79e-4447-8cc2-baa4af7f359c" />
   <meta>
-    <versionId value="11" />
-    <lastUpdated value="2020-10-19T05:16:01.832+00:00" />
+    <versionId value="12" />
+    <lastUpdated value="2020-11-12T13:17:55.846+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductIngredient" />
   <name value="safest-medicinalProductIngredient" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2020-10-19T05:13:52.3856245Z" />
+  <date value="2020-11-12T13:17:38.173292+00:00" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -25,10 +25,19 @@
     <element id="MedicinalProductIngredient.identifier">
       <path value="MedicinalProductIngredient.identifier" />
       <definition value="The identifier(s) of this Ingredient that are assigned by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate.&#xD;&#xA;&#xD;&#xA;Identifier defined by SAFEST" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicinalProductIngredient.identifier.system">
       <path value="MedicinalProductIngredient.identifier.system" />
       <fixedUri value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProductIngredient" />
+    </element>
+    <element id="MedicinalProductIngredient.role">
+      <path value="MedicinalProductIngredient.role" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicinalProductIngredient.substance">
+      <path value="MedicinalProductIngredient.substance" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

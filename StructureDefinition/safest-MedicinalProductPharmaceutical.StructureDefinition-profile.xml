@@ -2,13 +2,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="05aceafe-7f33-4348-9b22-6f1391a56b85" />
   <meta>
-    <versionId value="11" />
-    <lastUpdated value="2020-11-05T08:07:59.905+00:00" />
+    <versionId value="12" />
+    <lastUpdated value="2020-11-12T13:21:34.392+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPharmaceutical" />
   <name value="safest-MedicinalProductPharmaceutical" />
   <status value="draft" />
-  <date value="2020-11-05T08:07:48.4870876+00:00" />
+  <date value="2020-11-12T13:21:16.8006548+00:00" />
   <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
@@ -39,6 +39,7 @@
         <code value="Extension" />
         <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-subject" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicinalProductPharmaceutical.extension:property">
       <path value="MedicinalProductPharmaceutical.extension" />
@@ -47,6 +48,7 @@
         <code value="Extension" />
         <profile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-Property" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicinalProductPharmaceutical.identifier">
       <path value="MedicinalProductPharmaceutical.identifier" />
@@ -64,10 +66,31 @@
       <short value="Identifier as provided by SAFEST" />
       <definition value="An identifier for the pharmaceutical medicinal product as defined by SAFEST." />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicinalProductPharmaceutical.identifier:safestIdentifier.system">
       <path value="MedicinalProductPharmaceutical.identifier.system" />
       <fixedUri value="http://legemiddelverket.no/fhir/SAFEST/MedicinalProductPharmaceutical" />
+    </element>
+    <element id="MedicinalProductPharmaceutical.administrableDoseForm">
+      <path value="MedicinalProductPharmaceutical.administrableDoseForm" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicinalProductPharmaceutical.unitOfPresentation">
+      <path value="MedicinalProductPharmaceutical.unitOfPresentation" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicinalProductPharmaceutical.ingredient">
+      <path value="MedicinalProductPharmaceutical.ingredient" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicinalProductPharmaceutical.characteristics">
+      <path value="MedicinalProductPharmaceutical.characteristics" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicinalProductPharmaceutical.routeOfAdministration">
+      <path value="MedicinalProductPharmaceutical.routeOfAdministration" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
