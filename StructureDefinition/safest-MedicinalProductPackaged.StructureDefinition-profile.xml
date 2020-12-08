@@ -2,15 +2,15 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="0c2997cd-c746-4392-9c01-f2baeb11b3c6" />
   <meta>
-    <versionId value="30" />
-    <lastUpdated value="2020-11-24T15:27:51.844+00:00" />
+    <versionId value="31" />
+    <lastUpdated value="2020-12-08T06:09:55.571+00:00" />
   </meta>
   <url value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProductPackaged" />
   <version value="0.0.1" />
   <name value="safest-MedicinalProductPackaged" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2020-11-24T15:27:26.6670508+00:00" />
+  <date value="2020-12-08T06:09:21.3207748+00:00" />
   <description value="A medicinal product in a container or package as defined by SAFEST." />
   <fhirVersion value="4.0.0" />
   <mapping>
@@ -75,6 +75,7 @@
       <short value="LegemiddelPakning ID as it appears in FEST" />
       <definition value="The ID as presented in the FEST catalog LegemiddelPakningMerkevare used for mapping resources between SAFEST and FEST" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicinalProductPackaged.identifier:legemiddelPakningID.system">
       <path value="MedicinalProductPackaged.identifier.system" />
@@ -87,6 +88,7 @@
       <short value="The national ID provided by SAFEST" />
       <definition value="The new ID which SAFEST provide in its core-module." />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicinalProductPackaged.identifier:safestIdentifier.system">
       <path value="MedicinalProductPackaged.identifier.system" />
@@ -100,6 +102,7 @@
       <path value="MedicinalProductPackaged.identifier" />
       <sliceName value="nordicArticleNumber" />
       <short value="The Nordic article number for medicinal product packaged" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicinalProductPackaged.identifier:nordicArticleNumber.system">
       <path value="MedicinalProductPackaged.identifier.system" />
@@ -112,6 +115,7 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicinalProduct" />
         <targetProfile value="http://legemiddelverket.no/fhir/StructureDefinition/safest-MedicinalProduct" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicinalProductPackaged.legalStatusOfSupply">
       <path value="MedicinalProductPackaged.legalStatusOfSupply" />
@@ -126,6 +130,10 @@
       <path value="MedicinalProductPackaged.legalStatusOfSupply.coding.system" />
       <short value="OID from Volven" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7421" />
+    </element>
+    <element id="MedicinalProductPackaged.marketingStatus">
+      <path value="MedicinalProductPackaged.marketingStatus" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicinalProductPackaged.marketingAuthorization">
       <path value="MedicinalProductPackaged.marketingAuthorization" />
@@ -152,6 +160,7 @@
         <code value="Extension" />
         <profile value="http://legemiddelverket.no/fhir/StructureDefinition/containedItem" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicinalProductPackaged.packageItem.identifier">
       <path value="MedicinalProductPackaged.packageItem.identifier" />
@@ -171,6 +180,7 @@
       <definition value="The new ID which SAFEST provide in its core-module." />
       <min value="1" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicinalProductPackaged.packageItem.identifier:safestIdentifier.system">
       <path value="MedicinalProductPackaged.packageItem.identifier.system" />
@@ -181,6 +191,7 @@
       <sliceName value="dataCarrierIdentifier" />
       <short value="Data carrier identifier" />
       <definition value="Data carrier identifier of type NTIN or GTIN. Specify the standard by using &quot;System&quot;&#xD;&#xA;&#xD;&#xA;E.g: https://farmalogg.no/produktkode/GTIN, https://farmalogg.no/produktkode/NTIN" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicinalProductPackaged.packageItem.identifier:dataCarrierIdentifier.extension">
       <path value="MedicinalProductPackaged.packageItem.identifier.extension" />
@@ -206,6 +217,10 @@
       <short value="Use to signal the status of the data carrier identifier." />
       <definition value="Use to signal the status of the data carrier identifier. &#xD;&#xA;&#xD;&#xA;For active -&gt; official&#xD;&#xA;For cancelled -&gt; old&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Other values: usual | official | temp | secondary | old (If known)" />
     </element>
+    <element id="MedicinalProductPackaged.packageItem.type">
+      <path value="MedicinalProductPackaged.packageItem.type" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicinalProductPackaged.packageItem.type.coding">
       <path value="MedicinalProductPackaged.packageItem.type.coding" />
       <short value="Code defined by Volven" />
@@ -216,9 +231,21 @@
       <short value="OID from Volven" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7449" />
     </element>
+    <element id="MedicinalProductPackaged.packageItem.quantity">
+      <path value="MedicinalProductPackaged.packageItem.quantity" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicinalProductPackaged.packageItem.manufacturedItem">
       <path value="MedicinalProductPackaged.packageItem.manufacturedItem" />
       <max value="0" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.packageItem">
+      <path value="MedicinalProductPackaged.packageItem.packageItem" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicinalProductPackaged.packageItem.otherCharacteristics">
+      <path value="MedicinalProductPackaged.packageItem.otherCharacteristics" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
