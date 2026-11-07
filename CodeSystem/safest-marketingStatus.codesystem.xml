@@ -24,7 +24,7 @@
     </concept>
     <concept>
         <code value="1" />
-        <display value=" " />
+        <display value="Price regulated" />
         <designation>
             <language value="no" />
             <value value="Kan prisbehandles" />
@@ -32,7 +32,7 @@
     </concept>
     <concept>
         <code value="2" />
-        <display value=" " />
+        <display value="Controlled VRS prescription" />
         <designation>
             <language value="no" />
             <value value="Kontrollert VRS" />
@@ -40,7 +40,7 @@
     </concept>
     <concept>
         <code value="3" />
-        <display value=" " />
+        <display value="Approved VRS prescription" />
         <designation>
             <language value="no" />
             <value value="Godkjent VRS" />
@@ -64,7 +64,7 @@
     </concept>
     <concept>
         <code value="7" />
-        <display value=" " />
+        <display value="Deregistered" />
         <designation>
             <language value="no" />
             <value value="Avregistrert" />
@@ -72,7 +72,7 @@
     </concept>
     <concept>
         <code value="9" />
-        <display value=" " />
+        <display value="Expired" />
         <designation>
             <language value="no" />
             <value value="Utgått" />
@@ -80,7 +80,7 @@
     </concept>
     <concept>
         <code value="10" />
-        <display value="" />
+        <display value="Expired, never marketed" />
         <designation>
             <language value="no" />
             <value value="Utgått, aldri markedsført" />
