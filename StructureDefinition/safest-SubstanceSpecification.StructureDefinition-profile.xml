@@ -28,7 +28,7 @@
     </element>
     <element id="SubstanceSpecification.code">
       <path value="SubstanceSpecification.code" />
-      <definition value="Codes associated with the substance.&#xD;&#xA;&#xD;&#xA;Incluldes VirkestoffID from FEST" />
+      <definition value="Codes associated with the substance.&#xD;&#xA;&#xD;&#xA;Includes VirkestoffID from FEST" />
     </element>
     <element id="SubstanceSpecification.relationship.substance[x]">
       <path value="SubstanceSpecification.relationship.substance[x]" />
@@ -50,15 +50,15 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <max value="0" />
+      <max value="*" />
     </element>
-    <element id="SubstanceSpecification.relationship.amount[x]:no name">
+    <element id="SubstanceSpecification.relationship.amount[x]:amountRatioLowLimit">
       <path value="SubstanceSpecification.relationship.amountRatioLowLimit" />
-      <sliceName value="no name" />
+      <sliceName value="amountRatioLowLimit" />
     </element>
-    <element id="SubstanceSpecification.relationship.amount[x]:no name">
+    <element id="SubstanceSpecification.relationship.amount[x]:amountType">
       <path value="SubstanceSpecification.relationship.amountType" />
-      <sliceName value="no name" />
+      <sliceName value="amountType" />
     </element>
   </differential>
 </StructureDefinition>
